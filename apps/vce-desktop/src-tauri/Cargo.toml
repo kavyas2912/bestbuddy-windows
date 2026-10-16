@@ -1,0 +1,42 @@
+[package]
+name="vce-buddy-desktop"
+version.workspace=true
+edition.workspace=true
+build="build.rs"
+
+[lib]
+name="vce_buddy_desktop_lib"
+crate-type=["staticlib","cdylib","rlib"]
+
+[[bin]]
+name="vce-buddy-desktop"
+path="src/main.rs"
+
+[build-dependencies]
+tauri-build.workspace=true
+
+[dependencies]
+buddy-core={path="../../../crates/buddy-core"}
+buddy-plugin={path="../../../crates/buddy-plugin"}
+buddy-voice={path="../../../crates/buddy-voice"}
+buddy-plugin-weather={path="../../../plugins/weather"}
+buddy-plugin-news={path="../../../plugins/news"}
+buddy-plugin-market={path="../../../plugins/market"}
+buddy-plugin-fun-facts={path="../../../plugins/fun-facts"}
+serde.workspace=true
+serde_json.workspace=true
+tokio.workspace=true
+tauri.workspace=true
+tauri-plugin-opener.workspace=true
+open.workspace=true
+reqwest.workspace=true
+async-trait.workspace = true
+ring = "0.17"
+sha2 = "0.10"
+zip = { version = "2.4", default-features = false, features = ["deflate"] }
+tar = "0.4"
+flate2 = "1"
+bzip2 = "0.5"
+chrono.workspace = true
+
+urlencoding.workspace = true

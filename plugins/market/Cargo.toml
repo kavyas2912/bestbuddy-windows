@@ -1,0 +1,14 @@
+[package]
+name = "buddy-plugin-market"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+buddy-plugin = { path = "../../crates/buddy-plugin" }
+async-trait.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+urlencoding.workspace = true
+
+tokio.workspace = true

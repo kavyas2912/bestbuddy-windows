@@ -1,0 +1,280 @@
+[
+  {
+    "text": "Hello buddy",
+    "intent": "greeting",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "hello",
+      "buddy"
+    ]
+  },
+  {
+    "text": "hello world hello",
+    "intent": "greeting",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "hello",
+      "world"
+    ]
+  },
+  {
+    "text": "Can you help me please?",
+    "intent": "request",
+    "intent_confidence": 0.6666666666666666,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "can",
+      "you",
+      "help",
+      "please"
+    ]
+  },
+  {
+    "text": "What is photosynthesis?",
+    "intent": "question",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "what",
+      "photosynthesis"
+    ]
+  },
+  {
+    "text": "I disagree",
+    "intent": "disagreement",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "disagree"
+    ]
+  },
+  {
+    "text": "Can you clarify that?",
+    "intent": "clarification",
+    "intent_confidence": 0.5,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "can",
+      "you",
+      "clarify",
+      "that"
+    ]
+  },
+  {
+    "text": "start music",
+    "intent": "command",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "start",
+      "music"
+    ]
+  },
+  {
+    "text": "That sounds great, thanks",
+    "intent": "statement",
+    "intent_confidence": 0.5,
+    "sentiment": {
+      "positive": 1.0,
+      "negative": 0.0,
+      "neutral": 0.0
+    },
+    "emotion": "happy",
+    "keywords": [
+      "that",
+      "sounds",
+      "great",
+      "thanks"
+    ]
+  },
+  {
+    "text": "I feel sad and upset",
+    "intent": "statement",
+    "intent_confidence": 0.5,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 1.0,
+      "neutral": 0.0
+    },
+    "emotion": "angry",
+    "keywords": [
+      "feel",
+      "sad",
+      "and",
+      "upset"
+    ]
+  },
+  {
+    "text": "greatness is not great",
+    "intent": "statement",
+    "intent_confidence": 0.5,
+    "sentiment": {
+      "positive": 0.5,
+      "negative": 0.0,
+      "neutral": 0.5
+    },
+    "emotion": "happy",
+    "keywords": [
+      "greatness",
+      "not",
+      "great"
+    ]
+  },
+  {
+    "text": "hello2",
+    "intent": "statement",
+    "intent_confidence": 0.5,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "hello2"
+    ]
+  },
+  {
+    "text": "yes",
+    "intent": "agreement",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "yes"
+    ]
+  },
+  {
+    "text": "nothing special",
+    "intent": "statement",
+    "intent_confidence": 0.5,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "nothing",
+      "special"
+    ]
+  },
+  {
+    "text": "Explain voltage",
+    "intent": "clarification",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "explain",
+      "voltage"
+    ]
+  },
+  {
+    "text": "angry and happy",
+    "intent": "statement",
+    "intent_confidence": 0.5,
+    "sentiment": {
+      "positive": 0.5,
+      "negative": 0.5,
+      "neutral": 0.0
+    },
+    "emotion": "happy",
+    "keywords": [
+      "angry",
+      "and",
+      "happy"
+    ]
+  },
+  {
+    "text": "I love good music",
+    "intent": "statement",
+    "intent_confidence": 0.5,
+    "sentiment": {
+      "positive": 1.0,
+      "negative": 0.0,
+      "neutral": 0.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "love",
+      "good",
+      "music"
+    ]
+  },
+  {
+    "text": "what can you do",
+    "intent": "question",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 1.0
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "what",
+      "can",
+      "you"
+    ]
+  },
+  {
+    "text": "no thanks",
+    "intent": "disagreement",
+    "intent_confidence": 1.0,
+    "sentiment": {
+      "positive": 0.5,
+      "negative": 0.0,
+      "neutral": 0.5
+    },
+    "emotion": "neutral",
+    "keywords": [
+      "thanks"
+    ]
+  }
+]

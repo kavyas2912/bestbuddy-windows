@@ -1,0 +1,41 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/buddy-core",
+  "crates/buddy-intelligence",
+  "crates/buddy-plugin",
+  "crates/buddy-voice",
+  "crates/buddy-api",
+  "plugins/weather",
+  "plugins/news",
+  "plugins/market",
+  "plugins/fun-facts",
+  "apps/vce-desktop/src-tauri",
+]
+
+[workspace.package]
+version = "0.8.0"
+edition = "2021"
+authors = ["BestBuddy"]
+license = "MIT"
+
+[workspace.dependencies]
+anyhow = "1"
+async-trait = "0.1"
+chrono = { version = "0.4", features = ["serde"] }
+cpal = "0.16"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "gzip", "brotli", "deflate"] }
+rodio = "0.21"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sherpa-onnx = "=1.13.8"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time"] }
+thiserror = "2"
+urlencoding = "2"
+open = "5"
+uuid = { version = "1", features = ["v4", "serde"] }
+
+# Tauri 2 current stable line used by this project.
+tauri = { version = "2.11.5", features = [] }
+tauri-build = "2.6.3"
+tauri-plugin-opener = "2"

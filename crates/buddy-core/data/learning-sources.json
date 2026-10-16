@@ -1,0 +1,32 @@
+[
+  {
+    "name": "NASA Houston We Have a Podcast",
+    "url": "https://feeds.megaphone.fm/nationalaeronauticsandspaceadministration1776343825",
+    "format": "nasa-rss"
+  },
+  {
+    "name": "NASA Curious Universe",
+    "url": "https://feeds.megaphone.fm/nationalaeronauticsandspaceadministration8162188566",
+    "format": "nasa-rss"
+  },
+  {
+    "name": "Federal Reserve speeches",
+    "url": "https://www.federalreserve.gov/feeds/speeches.xml",
+    "format": "fed-rss"
+  },
+  {
+    "name": "Federal Reserve testimony",
+    "url": "https://www.federalreserve.gov/feeds/testimony.xml",
+    "format": "fed-rss"
+  },
+  {
+    "name": "Oireachtas parliamentary debates",
+    "url": "https://api.oireachtas.ie/v1/debates?limit=2",
+    "format": "oireachtas"
+  },
+  {
+    "name": "Hacker News public discussions",
+    "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
+    "format": "hn"
+  }
+]

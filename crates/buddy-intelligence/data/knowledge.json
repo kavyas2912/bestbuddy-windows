@@ -1,0 +1,319 @@
+[
+  {
+    "questions": [
+      "What is the capital of France?",
+      "France capital"
+    ],
+    "answer": "Paris is the capital of France.",
+    "subject": "France",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of India?",
+      "India capital"
+    ],
+    "answer": "New Delhi is the capital of India.",
+    "subject": "India",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of Japan?",
+      "Japan capital"
+    ],
+    "answer": "Tokyo is the capital of Japan.",
+    "subject": "Japan",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of Germany?",
+      "Germany capital"
+    ],
+    "answer": "Berlin is the capital of Germany.",
+    "subject": "Germany",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of Italy?",
+      "Italy capital"
+    ],
+    "answer": "Rome is the capital of Italy.",
+    "subject": "Italy",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of Spain?",
+      "Spain capital"
+    ],
+    "answer": "Madrid is the capital of Spain.",
+    "subject": "Spain",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of Australia?",
+      "Australia capital"
+    ],
+    "answer": "Canberra is the capital of Australia.",
+    "subject": "Australia",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of Canada?",
+      "Canada capital"
+    ],
+    "answer": "Ottawa is the capital of Canada.",
+    "subject": "Canada",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of United Kingdom?",
+      "United Kingdom capital"
+    ],
+    "answer": "London is the capital of United Kingdom.",
+    "subject": "United Kingdom",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of United States?",
+      "United States capital"
+    ],
+    "answer": "Washington, D.C. is the capital of United States.",
+    "subject": "United States",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is the capital of Brazil?",
+      "Brazil capital"
+    ],
+    "answer": "Brasilia is the capital of Brazil.",
+    "subject": "Brazil",
+    "relation": "capital",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is photosynthesis?",
+      "Explain photosynthesis"
+    ],
+    "answer": "Photosynthesis is how plants, algae, and some bacteria use light energy to make sugars from carbon dioxide and water. Oxygen is released in oxygen-producing photosynthesis.",
+    "subject": "photosynthesis",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {
+      "why is it important": "Photosynthesis stores energy in food and supplies much of the oxygen used by living things.",
+      "explain simply": "A plant uses sunlight to turn water and carbon dioxide into food, releasing oxygen."
+    }
+  },
+  {
+    "questions": [
+      "Why is the sky blue?",
+      "Explain why the sky is blue"
+    ],
+    "answer": "Air molecules scatter shorter wavelengths of sunlight more strongly than longer wavelengths. This Rayleigh scattering makes the daytime sky look blue.",
+    "subject": "sky",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {
+      "why is sunset red": "Near sunset, sunlight travels through more air. Much of the blue light is scattered away, leaving more red and orange light."
+    }
+  },
+  {
+    "questions": [
+      "What is gravity?",
+      "Explain gravity"
+    ],
+    "answer": "Gravity is the attraction associated with mass and energy. It keeps us on Earth and governs the motions of planets.",
+    "subject": "gravity",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is an electron?",
+      "Explain electrons"
+    ],
+    "answer": "An electron is a negatively charged elementary particle. Electrons are central to electricity and chemical bonding.",
+    "subject": "electron",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is voltage?",
+      "Explain voltage"
+    ],
+    "answer": "Voltage is electric potential difference: energy transferred per unit charge. Its unit is the volt.",
+    "subject": "voltage",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is Ohms law?",
+      "What is Ohm's law?",
+      "Explain Ohms law"
+    ],
+    "answer": "Ohm's law is V = I times R: voltage equals current multiplied by resistance, for a component whose resistance stays constant.",
+    "subject": "Ohms law",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is resistance?",
+      "Explain electrical resistance"
+    ],
+    "answer": "Electrical resistance describes opposition to electric current. Its unit is the ohm.",
+    "subject": "resistance",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is a transistor?",
+      "Explain transistors"
+    ],
+    "answer": "A transistor is a semiconductor device used to amplify signals or switch current. Transistors are building blocks of modern electronic circuits.",
+    "subject": "transistor",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is binary?",
+      "Explain binary numbers"
+    ],
+    "answer": "Binary is a base-two number system using zero and one. Each position represents a power of two.",
+    "subject": "binary",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is an algorithm?",
+      "Explain algorithms"
+    ],
+    "answer": "An algorithm is a defined sequence of steps for solving a problem or performing a task.",
+    "subject": "algorithm",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is STT?",
+      "What is speech to text?"
+    ],
+    "answer": "Speech to text, or STT, converts spoken audio into written words. BestBuddy uses its bundled native speech recognizer for local transcription.",
+    "subject": "STT",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is TTS?",
+      "What is text to speech?"
+    ],
+    "answer": "Text to speech, or TTS, converts written words into spoken audio. BestBuddy uses its bundled Piper voice for offline speech.",
+    "subject": "TTS",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is VAD?",
+      "What is voice activity detection?"
+    ],
+    "answer": "Voice activity detection, or VAD, distinguishes speech from silence or background sound to help determine when an utterance starts and ends.",
+    "subject": "VAD",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is RAG?",
+      "What is retrieval augmented generation?"
+    ],
+    "answer": "Retrieval augmented generation retrieves relevant source material and gives it to a language model to help produce a grounded answer.",
+    "subject": "RAG",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is Boyle's law?",
+      "What is Boyles law?",
+      "What is boys law?",
+      "Explain Boyle's law",
+      "Explain boys law"
+    ],
+    "answer": "Boyle's law states that, at constant temperature, the pressure of a fixed amount of gas is inversely proportional to its volume. Pressure times volume stays constant.",
+    "subject": "Boyle law",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "What is a light year?",
+      "Explain light years"
+    ],
+    "answer": "A light-year is a distance: how far light travels in a vacuum in one year, about 9.46 trillion kilometres.",
+    "subject": "light year",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  },
+  {
+    "questions": [
+      "Why does the Moon have phases?",
+      "Explain moon phases"
+    ],
+    "answer": "The Moon has phases because, as it orbits Earth, we see different portions of its sunlit half.",
+    "subject": "Moon phases",
+    "relation": "",
+    "source": "Bundled offline knowledge",
+    "followups": {}
+  }
+]

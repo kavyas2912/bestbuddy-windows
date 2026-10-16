@@ -1,0 +1,9 @@
+[package]
+name = "buddy-intelligence"
+version.workspace = true
+edition.workspace = true
+description = "Offline analysis, grounded retrieval and composition shared by BestBuddy hosts"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true

@@ -1,0 +1,53 @@
+{
+  "asr": {
+    "type": "archive",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-base.en.tar.bz2",
+    "archive_sha256": "475BC7052CE299C007F6D5D5407BA8601F819A2867F6EECEE510ED17DF581542",
+    "directory": "asr/sherpa-onnx-whisper-base.en",
+    "archive_root": "sherpa-onnx-whisper-base.en",
+    "files": {
+      "base.en-tokens.txt": "306CD27F03C1A714ECA7108E03D66B7DC042ABE8C258B44C199A7ED9838DD930",
+      "base.en-encoder.int8.onnx": "EF6B936F4C9B1D90A3B68634B60C4ED8576B26172B33C2535EC0E933C9EDB823",
+      "base.en-decoder.int8.onnx": "F7162AD6DB2DBEF16CFAEAA7F945B9D7DD9C1B8D472F6ACA82F2273D185E4D41"
+    }
+  },
+  "tts": {
+    "type": "archive",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-lessac-medium.tar.bz2",
+    "directory": "tts/vits-piper-en_US-lessac-medium",
+    "archive_root": "vits-piper-en_US-lessac-medium",
+    "files": {
+      "tokens.txt": "87C8EF66EAE5473ED0CC0366B3964C736CA6C5F676C979522EA31234E47430B9",
+      "en_US-lessac-medium.onnx": "4BA07D8549906668EE855FD9ABF9FAF66C5DB74742712FF026A159F7277FCA9F",
+      "espeak-ng-data/phontab": "886F3FA402CB0BA73D483AA8AD000AF47A6B7CC06293C75A97913FBA68A530F6",
+      "espeak-ng-data/phonindex": "3CA7B8FA3B42624E4B0F152707E7A39245FCE569AA99EA47C055D9E622FCF0C4",
+      "espeak-ng-data/phondata": "4E0288957874029A8C3C9F41A8F517AD4BF18127046DECBDD4B9D1D6807CE3A3",
+      "espeak-ng-data/intonations": "3F8AF65FD3EDA9759A10F021D61361C120871F463515229C925995C7F90918CC"
+    }
+  },
+  "vad": {
+    "type": "file",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx",
+    "path": "vad/silero_vad.onnx",
+    "sha256": "9E2449E1087496D8D4CABA907F23E0BD3F78D91FA552479BB9C23AC09CBB1FD6"
+  },
+  "kws": {
+    "type": "archive",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/kws-models/sherpa-onnx-kws-zipformer-gigaspeech-3.3M-2024-01-01.tar.bz2",
+    "directory": "kws/sherpa-onnx-kws-zipformer-gigaspeech-3.3M-2024-01-01",
+    "archive_root": "sherpa-onnx-kws-zipformer-gigaspeech-3.3M-2024-01-01",
+    "files": {
+      "tokens.txt": "FD2DED4050A55D2B1578870BA8697D02371980217806B7558BD0A5CC60F3BA53",
+      "bpe.model": "C8A2A0129C4AB8E463164C142F82D25649661B122C8CD0B7AAB5C9E80B90AD24",
+      "encoder-epoch-12-avg-2-chunk-16-left-64.int8.onnx": "1E721676515BCD42A186979733981213C66C80DB680E1CC582DFEDF3BE76E678",
+      "decoder-epoch-12-avg-2-chunk-16-left-64.onnx": "F61EBD3EED3773A44D088D53DFAE92DBB6AEC4839F4DCAEE2D402414741663A3",
+      "joiner-epoch-12-avg-2-chunk-16-left-64.int8.onnx": "EAE9DA0C7E1E6C6A3F4CC42D167899C388F6C6701B94CB96320E4F55DF79624C"
+    }
+  },
+  "denoise": {
+    "type": "file",
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speech-enhancement-models/gtcrn_simple.onnx",
+    "path": "denoise/gtcrn_simple.onnx",
+    "sha256": "E77603AC0C23DAC3227DD2D7135B3A585CBEE2679048AECFA886657D3AE1B534"
+  }
+}

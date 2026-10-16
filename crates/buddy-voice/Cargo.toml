@@ -1,0 +1,12 @@
+[package]
+name="buddy-voice"
+version.workspace=true
+edition.workspace=true
+[dependencies]
+anyhow.workspace=true
+cpal.workspace=true
+rodio.workspace=true
+sherpa-onnx.workspace=true
+serde.workspace=true
+serde_json.workspace=true
+hound="3.5.1"

@@ -1,0 +1,74 @@
+[
+  {
+    "phrase": "Hello! How can I help you today?",
+    "intent": "greeting",
+    "sentiment": "neutral",
+    "tone": "friendly",
+    "probability": 0.94,
+    "tenor": "supportive",
+    "prosody": "neutral"
+  },
+  {
+    "phrase": "Good to hear from you. What would you like to discuss?",
+    "intent": "greeting",
+    "sentiment": "neutral",
+    "tone": "friendly",
+    "probability": 0.88,
+    "tenor": "supportive",
+    "prosody": "neutral"
+  },
+  {
+    "phrase": "I can help explore that. Could you tell me a little more?",
+    "intent": "question",
+    "sentiment": "neutral",
+    "tone": "friendly",
+    "probability": 0.7,
+    "tenor": "supportive",
+    "prosody": "neutral"
+  },
+  {
+    "phrase": "Tell me the task and I will help you work through it.",
+    "intent": "request",
+    "sentiment": "neutral",
+    "tone": "friendly",
+    "probability": 0.83,
+    "tenor": "supportive",
+    "prosody": "neutral"
+  },
+  {
+    "phrase": "Understood. What should we do next?",
+    "intent": "command",
+    "sentiment": "neutral",
+    "tone": "friendly",
+    "probability": 0.65,
+    "tenor": "supportive",
+    "prosody": "neutral"
+  },
+  {
+    "phrase": "That sounds good. What would you like to try next?",
+    "intent": "agreement",
+    "sentiment": "neutral",
+    "tone": "friendly",
+    "probability": 0.84,
+    "tenor": "supportive",
+    "prosody": "neutral"
+  },
+  {
+    "phrase": "I see your point. Which part would you like to reconsider?",
+    "intent": "disagreement",
+    "sentiment": "neutral",
+    "tone": "friendly",
+    "probability": 0.82,
+    "tenor": "supportive",
+    "prosody": "neutral"
+  },
+  {
+    "phrase": "I can explain that in another way. Which part was unclear?",
+    "intent": "clarification",
+    "sentiment": "neutral",
+    "tone": "friendly",
+    "probability": 0.9,
+    "tenor": "supportive",
+    "prosody": "neutral"
+  }
+]

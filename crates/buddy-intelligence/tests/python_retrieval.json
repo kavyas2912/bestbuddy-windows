@@ -1,0 +1,262 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "subject": "France"
+  },
+  {
+    "question": "France capital",
+    "subject": "France"
+  },
+  {
+    "question": "What is the capital of India?",
+    "subject": "India"
+  },
+  {
+    "question": "India capital",
+    "subject": "India"
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "subject": "Japan"
+  },
+  {
+    "question": "Japan capital",
+    "subject": "Japan"
+  },
+  {
+    "question": "What is the capital of Germany?",
+    "subject": "Germany"
+  },
+  {
+    "question": "Germany capital",
+    "subject": "Germany"
+  },
+  {
+    "question": "What is the capital of Italy?",
+    "subject": "Italy"
+  },
+  {
+    "question": "Italy capital",
+    "subject": "Italy"
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "subject": "Spain"
+  },
+  {
+    "question": "Spain capital",
+    "subject": "Spain"
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "subject": "Australia"
+  },
+  {
+    "question": "Australia capital",
+    "subject": "Australia"
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "subject": "Canada"
+  },
+  {
+    "question": "Canada capital",
+    "subject": "Canada"
+  },
+  {
+    "question": "What is the capital of United Kingdom?",
+    "subject": "United Kingdom"
+  },
+  {
+    "question": "United Kingdom capital",
+    "subject": "United Kingdom"
+  },
+  {
+    "question": "What is the capital of United States?",
+    "subject": "United States"
+  },
+  {
+    "question": "United States capital",
+    "subject": "United States"
+  },
+  {
+    "question": "What is the capital of Brazil?",
+    "subject": "Brazil"
+  },
+  {
+    "question": "Brazil capital",
+    "subject": "Brazil"
+  },
+  {
+    "question": "What is photosynthesis?",
+    "subject": "photosynthesis"
+  },
+  {
+    "question": "Explain photosynthesis",
+    "subject": "photosynthesis"
+  },
+  {
+    "question": "Why is the sky blue?",
+    "subject": "sky"
+  },
+  {
+    "question": "Explain why the sky is blue",
+    "subject": "sky"
+  },
+  {
+    "question": "What is gravity?",
+    "subject": "gravity"
+  },
+  {
+    "question": "Explain gravity",
+    "subject": "gravity"
+  },
+  {
+    "question": "What is an electron?",
+    "subject": "electron"
+  },
+  {
+    "question": "Explain electrons",
+    "subject": "electron"
+  },
+  {
+    "question": "What is voltage?",
+    "subject": "voltage"
+  },
+  {
+    "question": "Explain voltage",
+    "subject": "voltage"
+  },
+  {
+    "question": "What is Ohms law?",
+    "subject": "Ohms law"
+  },
+  {
+    "question": "What is Ohm's law?",
+    "subject": "Ohms law"
+  },
+  {
+    "question": "Explain Ohms law",
+    "subject": "Ohms law"
+  },
+  {
+    "question": "What is resistance?",
+    "subject": "resistance"
+  },
+  {
+    "question": "Explain electrical resistance",
+    "subject": "resistance"
+  },
+  {
+    "question": "What is a transistor?",
+    "subject": "transistor"
+  },
+  {
+    "question": "Explain transistors",
+    "subject": "transistor"
+  },
+  {
+    "question": "What is binary?",
+    "subject": "binary"
+  },
+  {
+    "question": "Explain binary numbers",
+    "subject": "binary"
+  },
+  {
+    "question": "What is an algorithm?",
+    "subject": "algorithm"
+  },
+  {
+    "question": "Explain algorithms",
+    "subject": "algorithm"
+  },
+  {
+    "question": "What is STT?",
+    "subject": "STT"
+  },
+  {
+    "question": "What is speech to text?",
+    "subject": "STT"
+  },
+  {
+    "question": "What is TTS?",
+    "subject": "TTS"
+  },
+  {
+    "question": "What is text to speech?",
+    "subject": "STT"
+  },
+  {
+    "question": "What is VAD?",
+    "subject": "VAD"
+  },
+  {
+    "question": "What is voice activity detection?",
+    "subject": "VAD"
+  },
+  {
+    "question": "What is RAG?",
+    "subject": "RAG"
+  },
+  {
+    "question": "What is retrieval augmented generation?",
+    "subject": "RAG"
+  },
+  {
+    "question": "What is Boyle's law?",
+    "subject": "Boyle law"
+  },
+  {
+    "question": "What is Boyles law?",
+    "subject": "Boyle law"
+  },
+  {
+    "question": "What is boys law?",
+    "subject": "Boyle law"
+  },
+  {
+    "question": "Explain Boyle's law",
+    "subject": "Boyle law"
+  },
+  {
+    "question": "Explain boys law",
+    "subject": "Boyle law"
+  },
+  {
+    "question": "What is a light year?",
+    "subject": "light year"
+  },
+  {
+    "question": "Explain light years",
+    "subject": "light year"
+  },
+  {
+    "question": "Why does the Moon have phases?",
+    "subject": "Moon phases"
+  },
+  {
+    "question": "Explain moon phases",
+    "subject": "Moon phases"
+  },
+  {
+    "question": "what is the capital of France today",
+    "subject": null
+  },
+  {
+    "question": "what is the capital of Mars",
+    "subject": null
+  },
+  {
+    "question": "does an electron have gravity",
+    "subject": null
+  },
+  {
+    "question": "hello photosynthesis",
+    "subject": null
+  },
+  {
+    "question": "the voltage of a transistor",
+    "subject": null
+  }
+]
