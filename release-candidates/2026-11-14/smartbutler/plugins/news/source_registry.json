@@ -1,0 +1,991 @@
+{
+  "publishers": {
+    "toi": {
+      "name": "Times of India",
+      "domain": "timesofindia.indiatimes.com"
+    },
+    "hindustantimes": {
+      "name": "Hindustan Times",
+      "domain": "hindustantimes.com"
+    },
+    "indiatoday": {
+      "name": "India Today",
+      "domain": "indiatoday.in"
+    },
+    "et": {
+      "name": "Economic Times",
+      "domain": "economictimes.indiatimes.com"
+    },
+    "businessstandard": {
+      "name": "Business Standard",
+      "domain": "business-standard.com"
+    },
+    "mint": {
+      "name": "Mint",
+      "domain": "livemint.com"
+    },
+    "loksatta": {
+      "name": "Loksatta",
+      "domain": "loksatta.com",
+      "language": "mr"
+    },
+    "lokmat": {
+      "name": "Lokmat",
+      "domain": "lokmat.com",
+      "language": "mr"
+    },
+    "sakal": {
+      "name": "Sakal",
+      "domain": "esakal.com",
+      "language": "mr"
+    },
+    "telegraph": {
+      "name": "The Telegraph India",
+      "domain": "telegraphindia.com"
+    },
+    "anandabazar": {
+      "name": "Anandabazar Patrika",
+      "domain": "anandabazar.com",
+      "language": "bn"
+    },
+    "newindianexpress": {
+      "name": "The New Indian Express",
+      "domain": "newindianexpress.com"
+    },
+    "thanthi": {
+      "name": "Daily Thanthi",
+      "domain": "dailythanthi.com",
+      "language": "ta"
+    },
+    "manorama": {
+      "name": "Malayala Manorama",
+      "domain": "manoramaonline.com",
+      "language": "ml"
+    },
+    "mathrubhumi": {
+      "name": "Mathrubhumi",
+      "domain": "mathrubhumi.com",
+      "language": "ml"
+    },
+    "deccanherald": {
+      "name": "Deccan Herald",
+      "domain": "deccanherald.com"
+    },
+    "prajavani": {
+      "name": "Prajavani",
+      "domain": "prajavani.net",
+      "language": "kn"
+    },
+    "deccanchronicle": {
+      "name": "Deccan Chronicle",
+      "domain": "deccanchronicle.com"
+    },
+    "eenadu": {
+      "name": "Eenadu",
+      "domain": "eenadu.net",
+      "language": "te"
+    },
+    "sakshi": {
+      "name": "Sakshi",
+      "domain": "sakshi.com",
+      "language": "te"
+    },
+    "gujaratsamachar": {
+      "name": "Gujarat Samachar",
+      "domain": "gujaratsamachar.com",
+      "language": "gu"
+    },
+    "divyabhaskar": {
+      "name": "Divya Bhaskar",
+      "domain": "divyabhaskar.co.in",
+      "language": "gu"
+    },
+    "npr": {
+      "name": "NPR",
+      "domain": "npr.org"
+    },
+    "cnn": {
+      "name": "CNN",
+      "domain": "cnn.com"
+    },
+    "abc": {
+      "name": "ABC News",
+      "domain": "abcnews.go.com"
+    },
+    "sky": {
+      "name": "Sky News",
+      "domain": "news.sky.com"
+    },
+    "itv": {
+      "name": "ITV News",
+      "domain": "itv.com"
+    },
+    "independent": {
+      "name": "The Independent",
+      "domain": "independent.co.uk"
+    },
+    "abcau": {
+      "name": "ABC Australia",
+      "domain": "abc.net.au"
+    },
+    "sbs": {
+      "name": "SBS News",
+      "domain": "sbs.com.au"
+    },
+    "smh": {
+      "name": "Sydney Morning Herald",
+      "domain": "smh.com.au"
+    },
+    "nine": {
+      "name": "9News",
+      "domain": "9news.com.au"
+    },
+    "cbc": {
+      "name": "CBC",
+      "domain": "cbc.ca"
+    },
+    "ctv": {
+      "name": "CTV News",
+      "domain": "ctvnews.ca"
+    },
+    "globalnews": {
+      "name": "Global News",
+      "domain": "globalnews.ca"
+    },
+    "globe": {
+      "name": "Globe and Mail",
+      "domain": "theglobeandmail.com"
+    },
+    "tagesschau": {
+      "name": "Tagesschau",
+      "domain": "tagesschau.de"
+    },
+    "spiegel": {
+      "name": "Der Spiegel",
+      "domain": "spiegel.de"
+    },
+    "zeit": {
+      "name": "Die Zeit",
+      "domain": "zeit.de"
+    },
+    "nhk": {
+      "name": "NHK World",
+      "domain": "www3.nhk.or.jp"
+    },
+    "japantimes": {
+      "name": "Japan Times",
+      "domain": "japantimes.co.jp"
+    },
+    "mainichi": {
+      "name": "Mainichi",
+      "domain": "mainichi.jp"
+    },
+    "asahi": {
+      "name": "Asahi Shimbun",
+      "domain": "asahi.com"
+    },
+    "bbc": {
+      "name": "BBC News",
+      "domain": "bbc.com"
+    },
+    "guardian": {
+      "name": "The Guardian",
+      "domain": "theguardian.com"
+    },
+    "reuters": {
+      "name": "Reuters",
+      "domain": "reuters.com"
+    },
+    "ap": {
+      "name": "Associated Press",
+      "domain": "apnews.com"
+    },
+    "hindu": {
+      "name": "The Hindu",
+      "domain": "thehindu.com"
+    },
+    "express": {
+      "name": "Indian Express",
+      "domain": "indianexpress.com"
+    },
+    "ndtv": {
+      "name": "NDTV",
+      "domain": "ndtv.com"
+    },
+    "moneycontrol": {
+      "name": "Moneycontrol",
+      "domain": "moneycontrol.com"
+    },
+    "yahoo": {
+      "name": "Yahoo Finance",
+      "domain": "finance.yahoo.com"
+    },
+    "cnbc": {
+      "name": "CNBC",
+      "domain": "cnbc.com"
+    },
+    "cnbctv18": {
+      "name": "CNBC-TV18",
+      "domain": "cnbctv18.com"
+    },
+    "etnow": {
+      "name": "ET Now",
+      "domain": "etnownews.com"
+    },
+    "nasa": {
+      "name": "NASA",
+      "domain": "nasa.gov"
+    },
+    "nature": {
+      "name": "Nature",
+      "domain": "nature.com"
+    },
+    "verge": {
+      "name": "The Verge",
+      "domain": "theverge.com"
+    },
+    "espn": {
+      "name": "ESPN",
+      "domain": "espn.com"
+    },
+    "variety": {
+      "name": "Variety",
+      "domain": "variety.com"
+    },
+    "aljazeera": {
+      "name": "Al Jazeera",
+      "domain": "aljazeera.com"
+    },
+    "dw": {
+      "name": "DW",
+      "domain": "dw.com"
+    },
+    "ft": {
+      "name": "Financial Times",
+      "domain": "ft.com"
+    },
+    "bloomberg": {
+      "name": "Bloomberg",
+      "domain": "bloomberg.com"
+    },
+    "afr": {
+      "name": "Australian Financial Review",
+      "domain": "afr.com"
+    },
+    "financialpost": {
+      "name": "Financial Post",
+      "domain": "financialpost.com"
+    },
+    "bnn": {
+      "name": "BNN Bloomberg",
+      "domain": "bnnbloomberg.ca"
+    },
+    "handelsblatt": {
+      "name": "Handelsblatt",
+      "domain": "handelsblatt.com"
+    },
+    "nikkei": {
+      "name": "Nikkei Asia",
+      "domain": "asia.nikkei.com"
+    },
+    "lemonde": {
+      "name": "Le Monde",
+      "domain": "lemonde.fr"
+    },
+    "lesechos": {
+      "name": "Les Echos",
+      "domain": "lesechos.fr"
+    },
+    "france24": {
+      "name": "France 24",
+      "domain": "france24.com"
+    },
+    "figaro": {
+      "name": "Le Figaro",
+      "domain": "lefigaro.fr"
+    },
+    "bfm": {
+      "name": "BFM Business",
+      "domain": "bfmbusiness.bfmtv.com"
+    },
+    "scmp": {
+      "name": "South China Morning Post",
+      "domain": "scmp.com"
+    },
+    "rthk": {
+      "name": "RTHK",
+      "domain": "news.rthk.hk"
+    },
+    "hkej": {
+      "name": "Hong Kong Economic Journal",
+      "domain": "hkej.com"
+    },
+    "cna": {
+      "name": "CNA",
+      "domain": "channelnewsasia.com"
+    },
+    "straits": {
+      "name": "Straits Times",
+      "domain": "straitstimes.com"
+    },
+    "businesstimes": {
+      "name": "Business Times Singapore",
+      "domain": "businesstimes.com.sg"
+    },
+    "globo": {
+      "name": "G1 Globo",
+      "domain": "g1.globo.com"
+    },
+    "folha": {
+      "name": "Folha",
+      "domain": "folha.uol.com.br"
+    },
+    "estadao": {
+      "name": "Estadao",
+      "domain": "estadao.com.br"
+    },
+    "valor": {
+      "name": "Valor Economico",
+      "domain": "valor.globo.com"
+    },
+    "google": {
+      "name": "Google News",
+      "domain": ""
+    },
+    "msn": {
+      "name": "MSN News",
+      "domain": "msn.com"
+    },
+    "patrika": {
+      "name": "Rajasthan Patrika",
+      "domain": "patrika.com",
+      "language": "hi"
+    },
+    "bhaskar": {
+      "name": "Dainik Bhaskar",
+      "domain": "bhaskar.com",
+      "language": "hi"
+    },
+    "jagran": {
+      "name": "Dainik Jagran",
+      "domain": "jagran.com",
+      "language": "hi"
+    },
+    "amarujala": {
+      "name": "Amar Ujala",
+      "domain": "amarujala.com",
+      "language": "hi"
+    },
+    "tribune": {
+      "name": "The Tribune",
+      "domain": "tribuneindia.com",
+      "language": "en"
+    },
+    "ajit": {
+      "name": "Ajit",
+      "domain": "ajitjalandhar.com",
+      "language": "pa"
+    },
+    "sambad": {
+      "name": "Sambad",
+      "domain": "sambad.in",
+      "language": "or"
+    },
+    "odishatv": {
+      "name": "Odisha TV",
+      "domain": "odishatv.in",
+      "language": "en"
+    },
+    "assamtribune": {
+      "name": "Assam Tribune",
+      "domain": "assamtribune.com",
+      "language": "en"
+    },
+    "sentinel": {
+      "name": "The Sentinel",
+      "domain": "sentinelassam.com",
+      "language": "en"
+    },
+    "eastmojo": {
+      "name": "EastMojo",
+      "domain": "eastmojo.com",
+      "language": "en"
+    },
+    "heraldgoa": {
+      "name": "Herald Goa",
+      "domain": "heraldgoa.in",
+      "language": "en"
+    },
+    "navhind": {
+      "name": "Navhind Times",
+      "domain": "navhindtimes.in",
+      "language": "en"
+    },
+    "greaterkashmir": {
+      "name": "Greater Kashmir",
+      "domain": "greaterkashmir.com",
+      "language": "en"
+    },
+    "wbur": {
+      "name": "WBUR",
+      "domain": "wbur.org",
+      "language": "en"
+    },
+    "wgbh": {
+      "name": "GBH",
+      "domain": "wgbh.org",
+      "language": "en"
+    },
+    "bostonglobe": {
+      "name": "The Boston Globe",
+      "domain": "bostonglobe.com",
+      "language": "en"
+    },
+    "bostoncom": {
+      "name": "Boston.com",
+      "domain": "boston.com",
+      "language": "en"
+    },
+    "wcvb": {
+      "name": "WCVB",
+      "domain": "wcvb.com",
+      "language": "en"
+    },
+    "whdh": {
+      "name": "WHDH",
+      "domain": "whdh.com",
+      "language": "en"
+    },
+    "nbcboston": {
+      "name": "NBC Boston",
+      "domain": "nbcboston.com",
+      "language": "en"
+    },
+    "nhpr": {
+      "name": "New Hampshire Public Radio",
+      "domain": "nhpr.org",
+      "language": "en"
+    },
+    "mainepublic": {
+      "name": "Maine Public",
+      "domain": "mainepublic.org",
+      "language": "en"
+    },
+    "ctpublic": {
+      "name": "Connecticut Public",
+      "domain": "ctpublic.org",
+      "language": "en"
+    },
+    "vtdigger": {
+      "name": "VTDigger",
+      "domain": "vtdigger.org",
+      "language": "en"
+    },
+    "nepm": {
+      "name": "New England Public Media",
+      "domain": "nepm.org",
+      "language": "en"
+    },
+    "pbs": {
+      "name": "PBS News",
+      "domain": "pbs.org",
+      "language": "en"
+    },
+    "cbs": {
+      "name": "CBS News",
+      "domain": "cbsnews.com",
+      "language": "en"
+    },
+    "nbc": {
+      "name": "NBC News",
+      "domain": "nbcnews.com",
+      "language": "en"
+    },
+    "londonstandard": {
+      "name": "The Standard",
+      "domain": "standard.co.uk",
+      "language": "en"
+    },
+    "londonist": {
+      "name": "Londonist",
+      "domain": "londonist.com",
+      "language": "en"
+    },
+    "citynews": {
+      "name": "CityNews Toronto",
+      "domain": "toronto.citynews.ca",
+      "language": "en"
+    },
+    "torontostar": {
+      "name": "Toronto Star",
+      "domain": "thestar.com",
+      "language": "en"
+    },
+    "smithsonian": {
+      "name": "Smithsonian Magazine",
+      "domain": "smithsonianmag.com",
+      "language": "en"
+    },
+    "rnz": {
+      "name": "RNZ",
+      "domain": "rnz.co.nz"
+    },
+    "one_news": {
+      "name": "1News",
+      "domain": "1news.co.nz"
+    },
+    "sabc": {
+      "name": "SABC News",
+      "domain": "sabcnews.com"
+    },
+    "daily_maverick": {
+      "name": "Daily Maverick",
+      "domain": "dailymaverick.co.za"
+    },
+    "ahram": {
+      "name": "Ahram Online",
+      "domain": "english.ahram.org.eg"
+    },
+    "egypt_today": {
+      "name": "Egypt Today",
+      "domain": "egypttoday.com"
+    },
+    "swissinfo": {
+      "name": "SWI swissinfo.ch",
+      "domain": "swissinfo.ch"
+    },
+    "srf": {
+      "name": "SRF",
+      "domain": "srf.ch"
+    },
+    "elpais": {
+      "name": "El Pais",
+      "domain": "elpais.com"
+    },
+    "rtve": {
+      "name": "RTVE",
+      "domain": "rtve.es"
+    },
+    "xinhua": {
+      "name": "Xinhua",
+      "domain": "news.cn"
+    },
+    "china_daily": {
+      "name": "China Daily",
+      "domain": "chinadaily.com.cn"
+    },
+    "yonhap": {
+      "name": "Yonhap",
+      "domain": "yna.co.kr"
+    },
+    "korea_herald": {
+      "name": "The Korea Herald",
+      "domain": "koreaherald.com"
+    },
+    "focus_taiwan": {
+      "name": "Focus Taiwan",
+      "domain": "focustaiwan.tw"
+    },
+    "taipei_times": {
+      "name": "Taipei Times",
+      "domain": "taipeitimes.com"
+    },
+    "bangkok_post": {
+      "name": "Bangkok Post",
+      "domain": "bangkokpost.com"
+    },
+    "thai_pbs": {
+      "name": "Thai PBS World",
+      "domain": "thaipbsworld.com"
+    }
+  },
+  "financial": {
+    "india": [
+      "et",
+      "mint",
+      "businessstandard",
+      "moneycontrol",
+      "cnbctv18",
+      "etnow",
+      "yahoo",
+      "express"
+    ],
+    "united states": [
+      "cnbc",
+      "bloomberg",
+      "reuters",
+      "yahoo",
+      "ap",
+      "cnn"
+    ],
+    "united kingdom": [
+      "ft",
+      "bbc",
+      "sky",
+      "guardian",
+      "reuters",
+      "yahoo"
+    ],
+    "australia": [
+      "afr",
+      "abcau",
+      "sbs",
+      "smh",
+      "reuters",
+      "yahoo"
+    ],
+    "canada": [
+      "financialpost",
+      "bnn",
+      "cbc",
+      "globe",
+      "reuters",
+      "yahoo"
+    ],
+    "germany": [
+      "handelsblatt",
+      "dw",
+      "tagesschau",
+      "spiegel",
+      "reuters",
+      "yahoo"
+    ],
+    "japan": [
+      "nikkei",
+      "nhk",
+      "japantimes",
+      "asahi",
+      "reuters",
+      "yahoo"
+    ],
+    "france": [
+      "lesechos",
+      "bfm",
+      "lemonde",
+      "figaro",
+      "reuters",
+      "yahoo"
+    ],
+    "hong kong": [
+      "hkej",
+      "scmp",
+      "rthk",
+      "cnbc",
+      "reuters",
+      "yahoo"
+    ],
+    "singapore": [
+      "businesstimes",
+      "cna",
+      "straits",
+      "cnbc",
+      "reuters",
+      "yahoo"
+    ],
+    "brazil": [
+      "valor",
+      "estadao",
+      "folha",
+      "globo",
+      "reuters",
+      "yahoo"
+    ]
+  },
+  "india_city_states": {
+    "pune": "Maharashtra",
+    "mumbai": "Maharashtra",
+    "nagpur": "Maharashtra",
+    "nashik": "Maharashtra",
+    "delhi": "Delhi",
+    "new delhi": "Delhi",
+    "bengaluru": "Karnataka",
+    "bangalore": "Karnataka",
+    "chennai": "Tamil Nadu",
+    "coimbatore": "Tamil Nadu",
+    "kolkata": "West Bengal",
+    "calcutta": "West Bengal",
+    "hyderabad": "Telangana",
+    "kochi": "Kerala",
+    "thiruvananthapuram": "Kerala",
+    "kozhikode": "Kerala",
+    "ahmedabad": "Gujarat",
+    "surat": "Gujarat",
+    "vadodara": "Gujarat",
+    "jaipur": "Rajasthan",
+    "lucknow": "Uttar Pradesh",
+    "noida": "Uttar Pradesh",
+    "chandigarh": "Chandigarh",
+    "bhopal": "Madhya Pradesh",
+    "indore": "Madhya Pradesh",
+    "patna": "Bihar",
+    "bhubaneswar": "Odisha",
+    "guwahati": "Assam",
+    "visakhapatnam": "Andhra Pradesh",
+    "vijayawada": "Andhra Pradesh",
+    "panaji": "Goa"
+  },
+  "national": {
+    "france": [
+      "lemonde",
+      "figaro",
+      "france24",
+      "reuters",
+      "bbc"
+    ],
+    "hong kong": [
+      "scmp",
+      "rthk",
+      "hkej",
+      "bbc",
+      "reuters"
+    ],
+    "singapore": [
+      "cna",
+      "straits",
+      "businesstimes",
+      "bbc",
+      "reuters"
+    ],
+    "brazil": [
+      "globo",
+      "folha",
+      "estadao",
+      "valor",
+      "reuters"
+    ]
+  },
+  "research_references": [
+    "https://indianexpress.com/rss/",
+    "https://www.ndtv.com/rss?site=classic",
+    "https://help.yahoo.com/kb/SLN2310.html",
+    "https://www.tradingview.com/widget-docs/widgets/tickers/ticker-tape/"
+  ],
+  "india_categories": {
+    "breaking": [
+      "ndtv",
+      "indiatoday",
+      "toi",
+      "hindustantimes",
+      "bbc"
+    ],
+    "national": [
+      "hindu",
+      "express",
+      "ndtv",
+      "hindustantimes",
+      "bbc",
+      "reuters"
+    ],
+    "political": [
+      "express",
+      "hindu",
+      "ndtv",
+      "indiatoday",
+      "bbc",
+      "reuters"
+    ],
+    "sports": [
+      "espn",
+      "hindu",
+      "express",
+      "bbc",
+      "ndtv"
+    ],
+    "entertainment": [
+      "variety",
+      "hindustantimes",
+      "express",
+      "ndtv",
+      "indiatoday"
+    ],
+    "viral": [
+      "bbc",
+      "ap",
+      "reuters",
+      "ndtv",
+      "indiatoday"
+    ]
+  },
+  "place_aliases": {
+    "pune": [
+      "\u092a\u0941\u0923\u0947",
+      "\u092a\u0941\u0923\u094d\u092f\u093e\u0924"
+    ],
+    "mumbai": [
+      "\u092e\u0941\u0902\u092c\u0908"
+    ],
+    "maharashtra": [
+      "\u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930"
+    ],
+    "new delhi": [
+      "\u0926\u093f\u0932\u094d\u0932\u0940",
+      "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940"
+    ],
+    "delhi": [
+      "\u0926\u093f\u0932\u094d\u0932\u0940"
+    ],
+    "bengaluru": [
+      "bangalore",
+      "\u0cac\u0cc6\u0c82\u0c97\u0cb3\u0cc2\u0cb0\u0cc1"
+    ],
+    "bangalore": [
+      "bengaluru",
+      "\u0cac\u0cc6\u0c82\u0c97\u0cb3\u0cc2\u0cb0\u0cc1"
+    ],
+    "karnataka": [
+      "\u0c95\u0cb0\u0ccd\u0ca8\u0cbe\u0c9f\u0c95"
+    ],
+    "chennai": [
+      "\u0b9a\u0bc6\u0ba9\u0bcd\u0ba9\u0bc8"
+    ],
+    "tamil nadu": [
+      "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd\u0ba8\u0bbe\u0b9f\u0bc1"
+    ],
+    "kolkata": [
+      "calcutta",
+      "\u0995\u09b2\u0995\u09be\u09a4\u09be"
+    ],
+    "west bengal": [
+      "\u09aa\u09b6\u09cd\u099a\u09bf\u09ae\u09ac\u0999\u09cd\u0997"
+    ],
+    "kerala": [
+      "\u0d15\u0d47\u0d30\u0d33\u0d02"
+    ],
+    "kochi": [
+      "\u0d15\u0d4a\u0d1a\u0d4d\u0d1a\u0d3f"
+    ],
+    "hyderabad": [
+      "\u0c39\u0c48\u0c26\u0c30\u0c3e\u0c2c\u0c3e\u0c26\u0c4d"
+    ],
+    "telangana": [
+      "\u0c24\u0c46\u0c32\u0c02\u0c17\u0c3e\u0c23"
+    ],
+    "andhra pradesh": [
+      "\u0c06\u0c02\u0c27\u0c4d\u0c30\u0c2a\u0c4d\u0c30\u0c26\u0c47\u0c36\u0c4d"
+    ],
+    "gujarat": [
+      "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4"
+    ],
+    "ahmedabad": [
+      "\u0a85\u0aae\u0aa6\u0abe\u0ab5\u0abe\u0aa6"
+    ],
+    "jaipur": [
+      "\u091c\u092f\u092a\u0941\u0930"
+    ],
+    "rajasthan": [
+      "\u0930\u093e\u091c\u0938\u094d\u0925\u093e\u0928"
+    ],
+    "lucknow": [
+      "\u0932\u0916\u0928\u090a"
+    ],
+    "uttar pradesh": [
+      "\u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936"
+    ],
+    "patna": [
+      "\u092a\u091f\u0928\u093e"
+    ],
+    "bihar": [
+      "\u092c\u093f\u0939\u093e\u0930"
+    ],
+    "bhopal": [
+      "\u092d\u094b\u092a\u093e\u0932"
+    ],
+    "madhya pradesh": [
+      "\u092e\u0927\u094d\u092f \u092a\u094d\u0930\u0926\u0947\u0936"
+    ],
+    "guwahati": [
+      "\u0997\u09c1\u09f1\u09be\u09b9\u09be\u099f\u09c0"
+    ]
+  },
+  "regions": {
+    "rajasthan": [
+      "patrika",
+      "bhaskar"
+    ],
+    "madhya pradesh": [
+      "bhaskar",
+      "patrika"
+    ],
+    "chhattisgarh": [
+      "bhaskar",
+      "patrika"
+    ],
+    "uttar pradesh": [
+      "jagran",
+      "amarujala"
+    ],
+    "uttarakhand": [
+      "amarujala",
+      "jagran"
+    ],
+    "bihar": [
+      "jagran",
+      "bhaskar"
+    ],
+    "jharkhand": [
+      "jagran",
+      "bhaskar"
+    ],
+    "punjab": [
+      "tribune",
+      "ajit"
+    ],
+    "haryana": [
+      "tribune",
+      "bhaskar"
+    ],
+    "chandigarh": [
+      "tribune",
+      "express",
+      "hindustantimes"
+    ],
+    "himachal pradesh": [
+      "tribune",
+      "amarujala"
+    ],
+    "odisha": [
+      "sambad",
+      "odishatv"
+    ],
+    "assam": [
+      "assamtribune",
+      "sentinel",
+      "eastmojo"
+    ],
+    "arunachal pradesh": [
+      "eastmojo",
+      "assamtribune"
+    ],
+    "manipur": [
+      "eastmojo"
+    ],
+    "meghalaya": [
+      "eastmojo"
+    ],
+    "mizoram": [
+      "eastmojo"
+    ],
+    "nagaland": [
+      "eastmojo"
+    ],
+    "tripura": [
+      "eastmojo"
+    ],
+    "sikkim": [
+      "eastmojo"
+    ],
+    "goa": [
+      "heraldgoa",
+      "navhind"
+    ],
+    "jammu and kashmir": [
+      "greaterkashmir",
+      "tribune"
+    ],
+    "delhi": [
+      "hindustantimes",
+      "express",
+      "ndtv"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+[package]
+name="butler-plugin-weather"
+version.workspace=true
+edition.workspace=true
+[dependencies]
+butler-plugin={path="../../crates/butler-plugin"}
+async-trait.workspace=true
+chrono.workspace=true
+reqwest.workspace=true
+serde.workspace=true
+serde_json.workspace=true
+urlencoding.workspace=true

@@ -1,0 +1,43 @@
+@font-face{font-family:"App Compact";src:url("/fonts/RobotoCondensed.ttf") format("truetype");font-style:normal;font-weight:100 900;font-display:swap}
+
+#app{font-family:var(--font-ui)!important}
+#app :is(button,label,input,select,textarea,p,small,span,h2,h3,h4){font-family:var(--font-ui)!important}
+#app :is(button,label,input,select,textarea){font-size:14px!important;font-weight:400!important;letter-spacing:normal!important;text-transform:none!important}
+#app button :is(b,strong,span){font-weight:400!important;font-size:inherit!important}
+#app :is(.bubble,.chat-input){font-family:var(--font-ui)!important;font-size:14px!important;font-weight:400!important}
+#app .online-model-row{padding:5px!important;margin:3px 0!important;gap:5px!important}
+#app .online-model-row strong{font-size:14px!important;font-weight:400!important}
+#app .utilities-logs{margin-top:8px;border-top:1px solid var(--border-ui);padding-top:6px}
+#app .speech-settings-body,#app .review-tabpanel{min-height:0;overflow:auto}
+#app .model-stage-tabs{display:flex;flex-wrap:nowrap;gap:5px;overflow-x:auto;flex-shrink:0;padding:3px 0}
+#app .model-stage-tabs button{flex:0 0 auto;white-space:nowrap}
+#app .navigation-settings{display:flex;align-items:center;gap:6px}
+
+/* Compact light typography, including nested bold tags left by legacy widgets. */
+#app :is(button,input,select,option,textarea,label,p,small,span,b,strong,summary,legend,.bubble,.news-copy,.market-card){font-family:var(--font-ui)!important;font-weight:400!important;font-style:normal!important;font-stretch:condensed!important;letter-spacing:0!important;text-shadow:none!important}
+#app :is(button,label,input,select,option,textarea,.bubble){font-size:14px!important}
+#app button :is(b,strong,span){font-size:inherit!important;font-weight:400!important}
+#app .widget-header-unified :is(h2,.eyebrow){font-family:var(--font-ui)!important;font-size:16px!important;font-weight:500!important}
+#app :is(.news-copy b,.market-card strong,.settings-summary-row b){font-size:14px!important;font-weight:400!important}
+
+/* Horizontal choices remain one row at every width. */
+#app :is(.tabs,.market-tabs,.persona-shelf,.model-stage-tabs,.settings-page-tabs,.model-pages,.review-tabs,:is(.connection-settings-actions,#connection-settings-actions)){display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;min-width:0!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;gap:5px!important;padding:3px 2px!important;scrollbar-width:thin;scrollbar-color:var(--border-ui) var(--surface);overscroll-behavior-x:contain;flex-shrink:0!important}
+#app :is(.tabs,.market-tabs,.persona-shelf,.model-stage-tabs,.settings-page-tabs,.model-pages,.review-tabs,:is(.connection-settings-actions,#connection-settings-actions))>button{flex:0 0 auto!important;white-space:nowrap!important;width:auto!important;min-width:0!important;margin:0!important}
+#app :is(.tabs,.market-tabs,.persona-shelf,.model-stage-tabs,.settings-page-tabs,.model-pages,.review-tabs,:is(.connection-settings-actions,#connection-settings-actions))::-webkit-scrollbar{height:6px}
+#app :is(.tabs,.market-tabs,.persona-shelf,.model-stage-tabs,.settings-page-tabs,.model-pages,.review-tabs,:is(.connection-settings-actions,#connection-settings-actions))::-webkit-scrollbar-track{background:var(--surface)}
+#app :is(.tabs,.market-tabs,.persona-shelf,.model-stage-tabs,.settings-page-tabs,.model-pages,.review-tabs,:is(.connection-settings-actions,#connection-settings-actions))::-webkit-scrollbar-thumb{background:var(--surface);border-radius:5px}
+#app :is(.connection-settings-actions,#connection-settings-actions)>button{box-sizing:border-box!important;width:100px!important;min-width:100px!important;max-width:100px!important;flex:0 0 100px!important;padding:3px 6px!important;text-align:center!important;justify-content:center!important}
+@media(max-width:900px){#app .settings-nav{flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important}#app .settings-nav>button{flex:0 0 auto!important;white-space:nowrap!important}}
+
+@media(max-width:900px){#app .mobile-nav{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;gap:4px!important;scrollbar-width:thin;scrollbar-color:var(--border-ui) var(--surface)}#app .mobile-nav button{flex:0 0 72px!important;min-width:72px!important;white-space:nowrap!important}}
+
+/* Keep final choices and actions compact; short viewports retain overflow access. */
+#app #onboarding[data-registration-step="6"] .registration-body {gap:6px!important;font-size:13px!important}
+#app #onboarding[data-registration-step="6"] :is(fieldset,.onboard-section,.review-password,.review-danger,.registration-summary){margin:3px 0!important;padding:6px!important;gap:4px!important}
+#app #onboarding[data-registration-step="6"] :is(p,h3){margin:3px 0!important;font-size:13px!important;line-height:1.3!important}
+#app #onboarding[data-registration-step="6"] .registration-actions{gap:4px!important;overflow-x:auto!important;flex-wrap:nowrap!important}
+#app #onboarding[data-registration-step="6"] .registration-actions button{padding:3px 6px!important;font-size:12px!important;white-space:nowrap!important}
+
+.settings-speech-tools{display:flex;gap:4px;flex-wrap:nowrap;overflow-x:auto;margin:3px 0}.settings-speech-tools button,[data-quiet-speech]{white-space:nowrap}#registration-replay,[data-quiet-speech]{min-height:28px}
+
+#app #onboarding #registration-replay{display:inline-flex!important}#app .registration-guide [data-quiet-speech]{display:inline-flex!important;font-size:12px!important;padding:3px 7px!important;min-height:28px!important}

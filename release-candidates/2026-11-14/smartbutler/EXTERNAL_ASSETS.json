@@ -1,0 +1,16 @@
+[
+  {
+    "path": "tools/bundled-voice/amy-low.tar",
+    "sha256": "2852d2ab2dc5d8b64c2c8455197947a665d729d639d838fb20756ba98bd2ed6e",
+    "bytes": 81418240,
+    "retained_local_file": "C:\\Users\\knavy\\OneDrive\\Documents\\ChatGPT\\BestBuddy App\\News-Location-Fix\\smartbutler\\tools\\bundled-voice\\amy-low.tar",
+    "kind": "runtime_asset"
+  },
+  {
+    "path": "tools/bundled-voice/english-fallback.tar",
+    "sha256": "97e0ebf97aba3967bfd80a4913c78548e13a5d4e43406b5724e358e63eb178f3",
+    "bytes": 249917440,
+    "retained_local_file": "C:\\Users\\knavy\\OneDrive\\Documents\\ChatGPT\\BestBuddy App\\News-Location-Fix\\smartbutler\\tools\\bundled-voice\\english-fallback.tar",
+    "kind": "runtime_asset"
+  }
+]

@@ -1,0 +1,21 @@
+/* Single theme source. Components consume these roles, never private palettes. */
+:root{
+ --bg:#06131f;--surface:#0c2638;--surface-raised:#112f42;--surface-header:#102e41;
+ --text-primary:#f4fbff;--text-secondary:#bfd4e3;--text-disabled:#b9cdda;--border-ui:#46677e;--focus-ui:#86e9f8;
+ --positive-ui:#8be5b8;--negative-ui:#ffb1bd;--danger-bg:#a8203b;--danger-surface:#391b29;--danger-text:#ffe1e9;--danger-border:#f399ae;
+ --button-bg:linear-gradient(180deg,#244e65,#16384c);--button-hover:#265970;--button-active:#265970;--button-disabled:#193143;
+ --overlay:rgba(2,7,13,.78);--splash-bg:radial-gradient(circle at 50% 38%,#174c60 0,#0c2638 34%,#06131f 72%);
+ --shadow-control:inset 0 1px 0 #ffffff30,0 1px 2px #0003;--shadow-elevated:0 16px 40px #0005;
+ --font-ui:Arial,Roboto,sans-serif;--font-code:Consolas,monospace;--font-body:14px;--font-heading:16px;--font-caption:12px;
+ --space-1:4px;--space-2:6px;--space-3:8px;--space-4:12px;--radius-control:8px;--radius-card:12px;--control-height:30px;--header-height:44px;
+ /* Compatibility names point to theme roles; legacy components cannot define palettes. */
+ --panel:var(--surface);--panel2:var(--surface-raised);--soft:var(--text-primary);--muted:var(--text-secondary);--line:var(--border-ui);--aqua:var(--focus-ui);
+ --ui-paper:var(--surface);--ui-field:var(--surface-raised);--ui-ink:var(--text-primary);--ui-muted:var(--text-secondary);--ui-line:var(--border-ui);
+ --green:var(--positive-ui);--red:var(--negative-ui);--gold:var(--focus-ui);--violet:var(--focus-ui);color-scheme:dark
+}
+
+/* Bootstrap 5.3 color modes mapped to shared app roles. */
+:root[data-app-theme="darkly"]{--bg:#212529;--surface:#212529;--surface-raised:#2b3035;--surface-header:#343a40;--text-primary:#f8f9fa;--text-secondary:#ced4da;--text-disabled:#adb5bd;--border-ui:#6c757d;--focus-ui:#9ec5fe;--positive-ui:#a3cfbb;--negative-ui:#f1aeb5;--button-bg:#343a40;--button-hover:#495057;--button-active:#495057;--button-disabled:#2b3035;--splash-bg:radial-gradient(circle at 50% 38%,#343a40,#212529 72%);color-scheme:dark}
+:root[data-app-theme="flatly"]{--bg:#f8f9fa;--surface:#fff;--surface-raised:#f8f9fa;--surface-header:#e9ecef;--text-primary:#212529;--text-secondary:#495057;--text-disabled:#495057;--border-ui:#6c757d;--focus-ui:#084298;--positive-ui:#146c43;--negative-ui:#a51f31;--danger-bg:#a8203b;--danger-surface:#fff0f2;--danger-text:#721c2a;--danger-border:#a8203b;--button-bg:#e9ecef;--button-hover:#dee2e6;--button-active:#dee2e6;--button-disabled:#e9ecef;--splash-bg:radial-gradient(circle at 50% 38%,#fff,#f8f9fa 72%);color-scheme:light}
+:root{--bs-body-bg:var(--bg);--bs-body-color:var(--text-primary);--bs-secondary-color:var(--text-secondary);--bs-border-color:var(--border-ui);--bs-body-font-family:var(--font-ui);--bs-body-font-size:14px;--bs-border-radius:var(--radius-control)}
+:root{--danger-button-text:#fff}

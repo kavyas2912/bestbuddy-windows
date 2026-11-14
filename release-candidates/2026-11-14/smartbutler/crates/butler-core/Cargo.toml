@@ -1,0 +1,22 @@
+[package]
+name = "butler-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+butler-plugin = { path = "../butler-plugin" }
+chrono.workspace = true
+reqwest.workspace = true
+quick-xml = "0.37"
+serde.workspace = true
+serde_json.workspace = true
+urlencoding.workspace = true
+thiserror.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_Security_Cryptography"] }
+
+[dev-dependencies]
+uuid.workspace = true
+
+tokio.workspace = true

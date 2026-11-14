@@ -1,0 +1,239 @@
+use chrono::{Datelike, NaiveDate};
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(default)]
+pub struct Consents {
+    pub profile_storage: bool,
+    pub contacts_storage: bool,
+    pub microphone: bool,
+    pub voice_processing: bool,
+    pub personalization: bool,
+    pub live_information: bool,
+    pub external_services: bool,
+    pub emergency_contact: bool,
+    pub recorded_at: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(default)]
+pub struct Contact {
+    pub id: String,
+    pub name: String,
+    pub relationship: String,
+    pub phone: String,
+    pub email: String,
+    pub signal_link: String,
+    pub messenger_link: String,
+    pub slack_link: String,
+    pub discord_link: String,
+    pub zoom_link: String,
+    pub teams_link: String,
+    pub channel: String,
+    pub birthday: String,
+    pub anniversary: String,
+    pub emergency_priority: u8,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(default)]
+pub struct Reminder {
+    pub id: String,
+    pub title: String,
+    pub date: String,
+    pub time: String,
+    pub annual: bool,
+    pub lead_days: u32,
+    pub enabled: bool,
+    pub contact_id: String,
+    pub channel: String,
+}
+
+impl Reminder {
+    pub fn due_on(&self, today: NaiveDate) -> bool {
+        if !self.enabled {
+            return false;
+        }
+        let Ok(date) = NaiveDate::parse_from_str(&self.date, "%Y-%m-%d") else {
+            return false;
+        };
+        let Some(target) = today.checked_add_signed(chrono::Duration::days(self.lead_days as i64))
+        else {
+            return false;
+        };
+        if target < date || self.lead_days > 366 {
+            return false;
+        }
+        if self.annual {
+            // A leap-day anniversary is observed on February 28 in other years.
+            let occurrence = NaiveDate::from_ymd_opt(target.year(), date.month(), date.day())
+                .or_else(|| NaiveDate::from_ymd_opt(target.year(), 2, 28));
+            occurrence == Some(target)
+        } else {
+            date == target
+        }
+    }
+}
+
+pub fn age_on(birthdate: &str, today: NaiveDate) -> Option<i32> {
+    let born = NaiveDate::parse_from_str(birthdate, "%Y-%m-%d").ok()?;
+    if born > today {
+        return None;
+    }
+    Some(
+        today.year()
+            - born.year()
+            - i32::from((today.month(), today.day()) < (born.month(), born.day())),
+    )
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn age_changes_on_birthday_and_rejects_future() {
+        let day = NaiveDate::from_ymd_opt(2026, 9, 22).unwrap();
+        assert_eq!(age_on("1954-09-23", day), Some(71));
+        assert_eq!(age_on("1954-09-22", day), Some(72));
+        assert_eq!(age_on("2027-01-01", day), None);
+    }
+    #[test]
+    fn reminder_rejects_occurrences_before_start_and_excessive_lead() {
+        let mut r = Reminder {
+            date: "2028-01-01".into(),
+            annual: true,
+            lead_days: 2,
+            enabled: true,
+            ..Default::default()
+        };
+        assert!(!r.due_on(NaiveDate::from_ymd_opt(2026, 12, 30).unwrap()));
+        assert!(r.due_on(NaiveDate::from_ymd_opt(2027, 12, 30).unwrap()));
+        r.lead_days = 367;
+        assert!(!r.due_on(NaiveDate::from_ymd_opt(2026, 12, 30).unwrap()));
+    }
+    #[test]
+    fn reminder_crosses_year_and_handles_leap_day() {
+        let mut r = Reminder {
+            date: "2000-01-01".into(),
+            annual: true,
+            lead_days: 2,
+            enabled: true,
+            ..Default::default()
+        };
+        assert!(r.due_on(NaiveDate::from_ymd_opt(2026, 12, 30).unwrap()));
+        r.date = "2000-02-29".into();
+        r.lead_days = 0;
+        assert!(r.due_on(NaiveDate::from_ymd_opt(2027, 2, 28).unwrap()));
+        assert!(!r.due_on(NaiveDate::from_ymd_opt(2028, 2, 28).unwrap()));
+        r.enabled = false;
+        assert!(!r.due_on(NaiveDate::from_ymd_opt(2028, 2, 29).unwrap()));
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(default)]
+pub struct QuietPeriod {
+    pub enabled: bool,
+    pub start: String,
+    pub end: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(default)]
+pub struct ConversationRoutine {
+    pub quiet_periods: Vec<QuietPeriod>,
+    pub quiet_enabled: bool,
+    pub quiet_start: String,
+    pub quiet_end: String,
+    pub relax_start: String,
+    pub relax_end: String,
+    pub hour_counts: Vec<u8>,
+}
+impl ConversationRoutine {
+    pub fn valid(&self) -> bool {
+        let time = |value: &str| {
+            value.is_empty() || chrono::NaiveTime::parse_from_str(value, "%H:%M").is_ok()
+        };
+        [
+            &self.quiet_start,
+            &self.quiet_end,
+            &self.relax_start,
+            &self.relax_end,
+        ]
+        .into_iter()
+        .all(|value| time(value))
+            && self.quiet_periods.len() <= 3
+            && self.quiet_periods.iter().all(|period| {
+                !period.enabled
+                    || (time(&period.start)
+                        && time(&period.end)
+                        && !period.start.is_empty()
+                        && !period.end.is_empty()
+                        && period.start != period.end)
+            })
+            && self.hour_counts.len() <= 24
+            && self.hour_counts.iter().all(|count| *count <= 99)
+            && (!self.quiet_periods.is_empty()
+                || !self.quiet_enabled
+                || (!self.quiet_start.is_empty()
+                    && !self.quiet_end.is_empty()
+                    && self.quiet_start != self.quiet_end))
+    }
+}
+
+#[cfg(test)]
+mod routine_tests {
+    use super::*;
+    #[test]
+    fn routine_accepts_overnight_quiet_hours_and_rejects_invalid_inputs() {
+        let mut routine = ConversationRoutine {
+            quiet_enabled: true,
+            quiet_start: "22:00".into(),
+            quiet_end: "07:00".into(),
+            ..Default::default()
+        };
+        assert!(routine.valid());
+        routine.quiet_end = "25:00".into();
+        assert!(!routine.valid());
+        routine.quiet_end = "07:00".into();
+        routine.hour_counts = vec![0; 25];
+        assert!(!routine.valid());
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(default)]
+pub struct WatchSymbol {
+    pub symbol: String,
+    pub name: String,
+    pub exchange: String,
+}
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(default)]
+pub struct MarketWatchlist {
+    pub id: String,
+    pub name: String,
+    pub symbols: Vec<WatchSymbol>,
+}
+pub fn valid_watchlists(lists: &[MarketWatchlist]) -> bool {
+    let mut ids = std::collections::HashSet::new();
+    lists.len() <= 10
+        && lists.iter().all(|list| {
+            !list.id.is_empty()
+                && list.id.len() <= 64
+                && ids.insert(&list.id)
+                && !list.name.trim().is_empty()
+                && list.name.chars().count() <= 80
+                && list.symbols.len() <= 50
+                && list.symbols.iter().all(|item| {
+                    !item.symbol.is_empty()
+                        && item.symbol.len() <= 32
+                        && item
+                            .symbol
+                            .chars()
+                            .all(|c| c.is_ascii_alphanumeric() || ".^=-".contains(c))
+                        && item.name.chars().count() <= 120
+                        && item.exchange.len() <= 40
+                })
+        })
+}

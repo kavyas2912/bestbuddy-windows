@@ -1,0 +1,3 @@
+# Bundled English fallback
+
+Whisper base.en int8, English Lessac Piper TTS, Silero VAD, GigaSpeech keyword recognizer and GTCRN assets are taken from the same pinned Sherpa sources used by the desktop package. Every model member is recorded with its SHA-256 in english-fallback-files.json. Original source URLs and package verification information are in ../voice-model-manifest.json. Existing starter voice attribution and eSpeak NG GPL notices remain under public/licenses/starter-voice. English remains independent of optional voices; the app never deletes it when another language is selected. Source archive is about 250 MB before ZIP/APK compression.

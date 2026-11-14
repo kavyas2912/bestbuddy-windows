@@ -1,0 +1,32 @@
+/* Watchlist import review and stock detail use the same readable paper surface. */
+.watchlist-import{margin:18px 0;padding:14px;border:1px solid var(--line);border-radius:9px;background:var(--panel2)}
+.watchlist-import p,.stock-section p,.stock-section small{font-size:12px;line-height:1.6;color:var(--muted)}
+.watchlist-import label{margin:9px 0}.csv-symbol-preview{max-height:190px;overflow:auto;display:flex;flex-wrap:wrap;gap:7px;padding:8px 0}
+.csv-symbol-preview span{padding:7px;background:var(--panel);border:1px solid var(--line);border-radius:6px}.csv-symbol-preview small{display:block}
+#app .market-detail-card{width:min(920px,96vw);max-height:92dvh;overflow-y:auto;background:var(--panel);color:var(--soft)}
+.stock-symbol{font-size:12px;letter-spacing:1px}.stock-range{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}
+.stock-chart-labels{display:flex;justify-content:space-between;gap:12px;font-size:11px;color:var(--muted)}.stock-chart-labels span{max-width:50%}
+#app .market-chart{width:100%;height:auto;max-height:260px;background:var(--panel2);border:1px solid var(--line);border-radius:8px}
+.stock-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:12px;margin:15px 0}
+.stock-stats>div{padding:10px;background:var(--panel2);border-radius:7px}.stock-stats dt{font-size:11px;color:var(--muted)}.stock-stats dd{margin:6px 0 0;font-weight:700}
+.stock-section{padding:16px 0;border-top:1px solid var(--line)}.stock-section h3{font-family:var(--font-ui);margin:0 0 10px}
+#app .stock-section .company-news-list button{color:var(--soft);background:var(--panel)}
+#app #widget-market{position:relative}#app #widget-market>.workspace-intro{display:none!important}
+#app #widget-market>.panel-head{min-height:38px!important;padding:5px 10px!important;gap:8px!important}
+#app #widget-market .panel-title h2{font-size:18px!important}#app #widget-market .panel-title small{display:none}
+#app .market-control-bar{display:flex;align-items:center;flex-wrap:wrap;gap:6px!important;padding:5px 8px!important;margin:0!important}
+#app .market-control-bar label{gap:3px!important;font-size:11px;margin:0!important}#app .market-control-bar select{padding:5px!important;max-width:210px}
+#app .market-tabs{padding:5px 8px!important;gap:5px!important}#app .market-tabs button{padding:6px 9px!important;min-height:30px}
+#app .market-grid{margin:7px!important;gap:7px!important}#app .market-card{padding:10px!important;min-height:64px!important}
+#app .watchlist-quick{display:flex;gap:4px;flex-wrap:wrap;margin-right:6px}#app .watchlist-quick button,#app #watchlists-open{padding:5px 8px!important;min-height:28px;font-size:11px!important;max-width:135px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#app .watchlist-popover{position:absolute;z-index:90;left:8px;top:110px;width:min(560px,calc(100% - 16px));max-height:min(65dvh,600px);overflow:auto;padding:12px;background:var(--panel);color:var(--soft);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow-elevated)}
+.watchlist-popover>button{float:right}.watchlist-popover h3{font-size:17px;margin:8px 0}.watchlist-popover p{font-size:11px;line-height:1.5}
+.watchlist-popover.hidden{display:none!important}
+.watchlist-shortcuts{display:flex;align-items:center;gap:4px;min-width:0}
+#app .price-ticker-heading{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px!important;padding:6px 8px!important}
+#app .price-ticker-heading b{font-size:9px;padding:4px 6px}#app .price-ticker-heading span{font-size:10px;line-height:1.4;min-width:0}
+#app .price-ticker-heading button{margin:0;max-width:74px;padding:5px 7px;font-size:10px}
+@media(max-width:700px){#app .market-control-bar{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;align-items:end!important}#app .watchlist-shortcuts{grid-column:1/-1}#app .market-control-bar label{display:flex;flex-direction:column;min-width:0!important;width:auto!important}#app .market-control-bar select{width:100%!important;min-width:0!important;max-width:100%!important;height:40px}#app .watchlist-quick{margin-right:0;flex-wrap:nowrap}#app .watchlist-quick button{padding:5px 6px!important;max-width:88px}#app .watchlist-popover{top:100px;max-height:60dvh}}
+.watchlist-price-rows{display:flex;flex-direction:column}.watchlist-price-rows button{display:flex;justify-content:space-between;gap:12px;width:100%;padding:9px 2px;text-align:left;border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit}.watchlist-price-rows button>span:last-child{text-align:right}.watchlist-price-rows small{display:block;font-size:11px;margin-top:4px}
+
+.buddy-story{border-bottom:1px solid var(--line)}.buddy-story .news-row{width:100%}.story-coverage{padding:4px 8px;font-size:11px}.story-coverage button{display:block;width:100%;text-align:left;padding:7px;background:var(--panel);color:var(--soft);border:1px solid var(--line)}.story-coverage button span{display:block}.news-panel .source-choice select{max-width:170px}.news-panel .panel-head{height:auto;min-height:48px;flex-wrap:wrap}.news-panel .panel-tools{flex-wrap:wrap}.news-panel #news-scope{font-size:10px;max-width:160px}.buddy-ticker-track{display:flex;width:max-content;animation:market-news-scroll 90s linear infinite}.buddy-ticker-track button{background:transparent;color:var(--soft);border:0;padding:5px 12px}.price-ticker-track{display:flex;width:max-content;animation:market-price-scroll var(--ticker-duration,65s) linear infinite}.ticker-loop{display:flex;gap:18px;padding-right:18px;flex:none}.price-ticker-window{overflow:hidden;min-height:66px}.price-ticker-track button{display:grid;grid-template-columns:auto auto;gap:4px 12px;min-width:180px;background:transparent;color:var(--soft);border:0;padding:6px 18px;text-align:left}.price-ticker-track small{grid-column:1/-1;font-size:10px}.price-ticker-heading{display:flex;gap:7px;padding:6px}.ticker-paused .price-ticker-track,.price-ticker-window:hover .price-ticker-track{animation-play-state:paused}.up{color:var(--positive-ui)}.down{color:var(--negative-ui)}@keyframes market-price-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}@keyframes market-news-scroll{from{transform:translateX(0)}to{transform:translateX(-70%)}}@media(prefers-reduced-motion:reduce){.buddy-ticker-track,.price-ticker-track{animation:none!important}.price-ticker-window{overflow-x:auto}.ticker-loop[aria-hidden]{display:none}}

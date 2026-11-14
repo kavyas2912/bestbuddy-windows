@@ -1,0 +1,6 @@
+{
+  "IdentityName": "REPLACE_WITH_PartnerCenter_PackageIdentityName",
+  "Publisher": "CN=REPLACE_WITH_EXACT_PARTNER_CENTER_PUBLISHER",
+  "PublisherDisplayName": "REPLACE_WITH_PARTNER_CENTER_PUBLISHER_DISPLAY_NAME",
+  "Version": "1.0.3.0"
+}

@@ -1,0 +1,55 @@
+/* Phone typography follows the system face, including Samsung faces where available. */
+.android-native body{font-family:var(--font-ui)!important;font-size:17px!important;line-height:1.5;color:var(--text-primary);background:var(--surface);-webkit-text-size-adjust:100%}
+.android-native #app button,.android-native .modal button{font-size:15px!important;min-height:48px!important;font-weight:600!important;line-height:1.35!important;border-radius:12px!important}
+.android-native #app input,.android-native #app select,.android-native .modal input,.android-native .modal select{font-size:17px!important;min-height:48px!important;border-radius:10px!important}
+.android-native #app p,.android-native #app label,.android-native .modal p,.android-native .modal label{font-size:16px!important;line-height:1.5!important}
+.android-native #app small,.android-native .modal small,.android-native #app .catalog-note{font-size:14px!important;line-height:1.45!important;color:var(--text-secondary)!important}
+.android-native #app h2,.android-native .modal h2{font-size:23px!important;line-height:1.3!important}
+.android-native #app h3,.android-native .modal h3{font-size:20px!important;line-height:1.3!important}
+.android-native #app h4,.android-native .modal h4{font-size:18px!important;line-height:1.35!important}
+.android-native #app .text-link{font-size:14px!important}
+.android-native #app #settings-panel [data-model-part] .compact-links button{font-size:14px!important}
+.android-native #app #settings-panel .vault-section small,.android-native #app #settings-panel .review-danger button,.android-native #app #settings-panel .review-save-bar p{font-size:14px!important}
+.android-native #app #settings-panel .settings-view{gap:8px!important}
+.android-native #app #settings-panel [data-settings-page=assistant]>.model-stage-tabs{min-height:52px!important}
+.android-native #app .settings-nav button{font-size:15px!important}
+.voice-setup-card{position:fixed;z-index:12000;bottom:12px;right:12px;width:min(440px,calc(100vw - 24px));box-sizing:border-box;max-height:calc(100dvh - 36px);overflow:auto;background:var(--surface);color:var(--text-primary);border:2px solid var(--border-ui);border-radius:20px;box-shadow:var(--shadow-elevated);padding:16px;font:16px/1.5 Roboto,system-ui,sans-serif}
+.voice-setup-card h3{font-size:20px;margin:0 40px 8px 0}.voice-setup-card p{margin:8px 0}.voice-setup-card button{font-family:var(--font-ui);font-size:15px;font-weight:600;line-height:1.35;min-height:48px;padding:8px 12px;border-radius:12px;border:1px solid var(--border-ui);background:var(--button-bg);color:var(--text-primary)}
+.voice-setup-card [data-collapse]{float:right;min-width:44px}.voice-setup-actions{display:flex;gap:6px;flex-wrap:wrap}.voice-setup-card progress{width:100%;height:12px}.voice-setup-card.minimised{width:auto;max-width:calc(100vw - 24px);padding:8px 12px}.voice-setup-card.minimised [data-voice-body]{display:none}.voice-setup-card.minimised h3{margin:8px 50px 8px 0;font-size:16px}.voice-setup-card.ready{border-color:var(--border-ui)}
+
+@media(max-width:900px){
+/* Phone typography follows the system face, including Samsung faces where available. */
+body{font-family:var(--font-ui)!important;font-size:17px!important;line-height:1.5;color:var(--text-primary);background:var(--bg);-webkit-text-size-adjust:100%}
+#app button,.modal button{font-size:15px!important;min-height:48px!important;font-weight:600!important;line-height:1.35!important;border-radius:12px!important}
+#app input,#app select,.modal input,.modal select{font-size:17px!important;min-height:48px!important;border-radius:10px!important}
+#app p,#app label,.modal p,.modal label{font-size:16px!important;line-height:1.5!important}
+#app small,.modal small,#app .catalog-note{font-size:14px!important;line-height:1.45!important;color:var(--text-secondary)!important}
+#app h2,.modal h2{font-size:23px!important;line-height:1.3!important}
+#app h3,.modal h3{font-size:20px!important;line-height:1.3!important}
+#app h4,.modal h4{font-size:18px!important;line-height:1.35!important}
+#app .text-link{font-size:14px!important}
+#app #settings-panel [data-model-part] .compact-links button{font-size:14px!important}
+#app #settings-panel .vault-section small,#app #settings-panel .review-danger button,#app #settings-panel .review-save-bar p{font-size:14px!important}
+#app #settings-panel .settings-view{gap:8px!important}
+#app #settings-panel [data-settings-page=assistant]>.model-stage-tabs{min-height:52px!important}
+#app .settings-nav button{font-size:15px!important}
+
+}
+
+.android-native #app .registration .onboard-section,.modal .registration .onboard-section{background:var(--surface)!important;color:var(--text-primary)!important;border:1px solid var(--border-ui)!important;border-radius:14px!important}
+.android-native #app .registration .onboard-section p,#app .registration .onboard-section label{color:var(--text-primary)!important;background:transparent!important;opacity:1!important}
+.android-native #app .registration .check{min-height:48px;gap:12px!important;line-height:1.5!important}
+.android-native #app .registration input[type=checkbox]{min-height:22px!important;width:22px!important;height:22px!important;flex:0 0 22px;accent-color:#255a6b}
+
+@media(max-width:900px){#app .registration .onboard-section,.modal .registration .onboard-section{background:var(--surface)!important;color:var(--text-primary)!important;border:1px solid var(--border-ui)!important;border-radius:14px!important}
+#app .registration .onboard-section p,#app .registration .onboard-section label{color:var(--text-primary)!important;background:transparent!important;opacity:1!important}
+#app .registration .check{min-height:48px;gap:12px!important;line-height:1.5!important}
+#app .registration input[type=checkbox]{min-height:22px!important;width:22px!important;height:22px!important;flex:0 0 22px;accent-color:#255a6b}
+}
+
+/* Voice setup must never obscure app navigation. Dismissal keeps preparation running. */
+.voice-setup-card[hidden]{display:none!important}
+.voice-setup-card{top:12px;bottom:auto;max-height:calc(100dvh - 100px);z-index:1060}
+.voice-setup-card [data-dismiss]{float:right;min-width:44px;margin-left:4px}
+body:has(#onboarding:not(.hidden)) .voice-setup-card{display:none}
+.keyboard-date-row{display:flex;align-items:center;gap:6px;min-width:0;position:relative}.keyboard-date-row>input:not(.native-calendar-input){flex:1;min-width:0;width:0}.keyboard-date-row>.date-picker-button{flex:0 0 auto}.native-calendar-input{position:absolute!important;opacity:0!important;pointer-events:none!important;width:1px!important;min-width:0!important;min-height:0!important;height:1px!important;inset:0}

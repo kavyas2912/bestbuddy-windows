@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "identifier": "com.smartbutler.app",
+  "version": "1.0.12",
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Smart Butler"
+      }
+    ]
+  },
+  "bundle": {
+    "android": {
+      "minSdkVersion": 26,
+      "versionCode": 13
+    }
+  }
+}

@@ -1,0 +1,21 @@
+/* One widget-header contract, shared by both desktop apps. */
+#app .widget-header-unified{box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important;gap:8px!important;height:44px!important;min-height:44px!important;max-height:44px!important;flex:0 0 44px!important;padding:4px 8px!important;margin:0!important;background:var(--surface-header)!important;background-image:none!important;color:var(--text-primary)!important;border:0!important;border-bottom:1px solid var(--border-ui)!important;border-radius:0!important;box-shadow:none!important;overflow:hidden!important}
+#app .widget-header-unified .panel-title{display:flex!important;align-items:center!important;gap:6px!important;min-width:0!important;flex:0 1 auto!important}
+#app .widget-header-unified :is(h2,.eyebrow){font-family:var(--font-ui)!important;font-size:16px!important;font-style:normal!important;font-weight:600!important;line-height:18px!important;letter-spacing:0!important;text-transform:none!important;color:var(--text-primary)!important;margin:0!important;padding:0!important;white-space:nowrap!important;text-shadow:none!important}
+#app .widget-header-unified :is(small,.live-label){font-family:var(--font-ui)!important;font-size:11px!important;font-weight:400!important;line-height:13px!important;letter-spacing:0!important;color:var(--text-secondary)!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important}
+#app .widget-header-unified :is(.panel-icon,.parrot-badge,.butler-badge){box-sizing:border-box!important;display:grid!important;place-items:center!important;flex:0 0 28px!important;width:28px!important;height:28px!important;margin:0!important;padding:2px!important;border:0!important;border-radius:7px!important;background:var(--surface-header)!important;color:var(--text-primary)!important;box-shadow:none!important}
+#app .widget-header-unified :is(.parrot-badge,.butler-badge) img{width:24px!important;height:24px!important;object-fit:contain!important}
+#app .widget-header-unified .panel-icon svg{width:19px!important;height:19px!important}
+#app .widget-header-unified .panel-tools{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;flex:0 1 auto!important;min-width:0!important;width:auto!important;gap:5px!important;margin:0!important;padding:0!important;overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:thin}
+#app .widget-header-unified button,#app .widget-header-unified select{box-sizing:border-box!important;flex-shrink:0!important;height:28px!important;min-height:28px!important;max-height:28px!important;min-width:28px!important;padding:3px 8px!important;border:1px solid var(--border-ui)!important;border-radius:8px!important;background:var(--button-bg)!important;color:var(--text-primary)!important;font:400 12px/18px var(--font-ui)!important;letter-spacing:0!important;margin:0!important;box-shadow:var(--shadow-control)!important}
+#app .widget-header-unified :is(.refresh,.panel-toggle,.widget-close,.round-icon){width:28px!important;padding:4px!important}
+#app .widget-header-unified button svg{width:16px!important;height:16px!important}
+#app .widget-header-unified label{margin:0!important;padding:0!important;gap:0!important;display:flex!important;align-items:center!important}
+#app .widget-header-unified select{max-width:170px!important}
+
+/* Calm sentence-case interface labels; retain acronyms and stock symbols. */
+#app :is(button,label,select,option,.live-label,.header-pill,.eyebrow,.kicker,.setting-tile,.price-ticker-heading){text-transform:none!important;font-family:var(--font-ui)!important;font-weight:400!important;letter-spacing:normal!important}
+#app button :is(b,strong,span,small){font-weight:400!important;text-transform:none!important;letter-spacing:normal!important}
+#app :is(.tabs,.market-tabs,.settings-nav,.desktop-widget-nav,.persona-shelf) button{font-size:13px!important}
+#app label{font-size:13px!important}
+#app .widget-header-unified :is(h2,.eyebrow){font-weight:500!important;font-size:16px!important;letter-spacing:normal!important;text-transform:none!important}

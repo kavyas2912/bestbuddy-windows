@@ -1,0 +1,14 @@
+Market layout correction P2 — 25 October 2026
+
+Apply AFTER the R11 P1 app fix (installer v1 or v2; app payloads are identical).
+Extract this ZIP to its own folder. Run APPLY_FIX.cmd and choose each app source folder containing Cargo.toml. Original affected files are backed up under .patch-backups. Real source edits are refused; harmless Cargo.lock package ordering is accepted only when every dependency field/checksum matches.
+
+Then rebuild: BUILD_PREVIEW.cmd and INSTALL_PREVIEW.cmd for Windows, BUILD_APK.cmd for Android. New build versions are Companion Windows 1.6.24.0, Smart Butler Windows 1.0.14.0, Android 1.0.10 (code 11). Keep your existing signing identity to update an installed app; private store-identity version overrides remain your own configuration. The patch itself modifies source only, not installed apps or profiles.
+
+Fixes the Market Watch screenshot defects: the ticker's old 66px inner viewport no longer overflows its 36px desktop / 46px phone strip; name, price and change use one readable scrolling line. Pause stays at the right. Repeated publisher suffixes are stripped from news-ticker headlines before the publisher label is added. Index selector and Companies occupy one compact row rather than a full-width standalone button. That row hides with the portfolio view and returns with indices. Existing index-chart, company-list, portfolio and ticker pause actions remain connected.
+
+The existing chat/theme font is retained. Foreground/surface colours change together during button/navigation state changes, preventing temporarily mismatched text during old independent colour transitions. Box-shadow, border and transform effects remain available. Theme choices, source/exchange selection, price refresh, watchlists, CSV, news, weather, models and voice engines are not removed or replaced.
+
+Design rule: a single-line ticker's children must fit inside its viewport vertically. Test actual text rectangles against the strip, not just the outer widget. Controls intended as a row must share a row container. Check selected/inactive navigation immediately after state changes, not only after colour transitions settle.
+
+Checks: production frontends build for all four source variants. Browser checks use compiled UI with fixture prices at desktop/phone widths and cover vertical ticker clipping, compact Companies placement, theme contrast, pause/resume, index-chart opening, Companies navigation and portfolio switching. These do not verify live exchange data, native speech, installed MSIX rendering or physical phone acceptance. Existing P1 engineering limits remain.

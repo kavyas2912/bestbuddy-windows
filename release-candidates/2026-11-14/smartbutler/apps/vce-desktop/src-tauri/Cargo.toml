@@ -1,0 +1,48 @@
+[package]
+name="smart-butler-desktop"
+version.workspace=true
+edition.workspace=true
+build="build.rs"
+
+[lib]
+name="smart_butler_desktop_lib"
+crate-type=["staticlib","cdylib","rlib"]
+
+[[bin]]
+name="smart-butler-desktop"
+path="src/main.rs"
+
+[build-dependencies]
+tauri-build.workspace=true
+
+[dependencies]
+butler-core={path="../../../crates/butler-core"}
+butler-plugin={path="../../../crates/butler-plugin"}
+butler-voice={path="../../../crates/butler-voice"}
+butler-plugin-weather={path="../../../plugins/weather"}
+butler-plugin-news={path="../../../plugins/news"}
+butler-plugin-market={path="../../../plugins/market"}
+butler-plugin-fun-facts={path="../../../plugins/fun-facts"}
+serde.workspace=true
+serde_json.workspace=true
+tokio.workspace=true
+tauri.workspace=true
+tauri-plugin-opener.workspace=true
+open.workspace=true
+reqwest.workspace=true
+async-trait.workspace = true
+ring = "0.17"
+sha2 = "0.10"
+zip = { version = "2.4", default-features = false, features = ["deflate"] }
+tar = "0.4"
+flate2 = "1"
+bzip2 = "0.5"
+chrono.workspace = true
+
+urlencoding.workspace = true
+
+dom_query = "=0.27.0"
+
+[target.'cfg(target_os = "android")'.dependencies]
+jni = "0.21"
+ndk-context = "=0.1.1"

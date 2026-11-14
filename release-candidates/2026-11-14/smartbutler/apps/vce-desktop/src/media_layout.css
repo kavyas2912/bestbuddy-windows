@@ -1,0 +1,34 @@
+/* Inherit paired surface/ink roles and the existing Buddy/Butler theme contract. */
+#app.baseline-ui .story-excerpt{display:block;margin:6px 0;font-size:1rem;line-height:1.5;color:inherit;white-space:normal;overflow-wrap:anywhere}
+#app.baseline-ui .news-copy b{white-space:normal;overflow:visible;text-overflow:clip}
+#app.baseline-ui .music-panel .music-hero{padding:16px 12px!important;gap:16px!important}
+#app.baseline-ui .music-panel .track-info b{font-size:1.2rem!important;white-space:normal;overflow-wrap:anywhere}
+#app.baseline-ui .music-panel .track-info small{font-size:1rem!important}
+#app.baseline-ui .music-panel .album-disc{width:76px;height:76px;flex:none}
+#app.baseline-ui .audio-spectrum{display:block;width:calc(100% - 24px);height:64px;margin:0 12px;opacity:.8}
+#app.baseline-ui .music-panel .eq{display:none} /* Replace decorative motion with measured audio data. */
+#app.baseline-ui .music-panel .music-controls{justify-content:center;gap:16px!important;padding:12px!important}
+#app.baseline-ui .music-panel .music-controls button{min-width:52px!important;min-height:52px!important;flex:0 0 auto}
+#app.baseline-ui .music-panel .music-controls .media-play{min-width:68px!important;min-height:68px!important;border:2px solid currentColor;border-radius:50%!important}
+#app.baseline-ui .player-timeline{display:grid;gap:4px;padding:0 12px 12px}
+#app.baseline-ui .player-timeline label{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:12px;font-size:1rem}
+#app.baseline-ui .player-timeline input{width:100%;min-height:48px}
+#app.baseline-ui .player-timeline #music-time{text-align:center;font-variant-numeric:tabular-nums}
+#app.baseline-ui .media-shelf{margin:8px 12px;border:1px solid var(--border-ui);border-radius:12px;background:var(--surface);color:var(--text-primary);flex:none}
+#app.baseline-ui .media-shelf>summary{padding:12px;min-height:48px;cursor:pointer;font-size:1rem;font-weight:500}
+#app.baseline-ui .media-shelf>summary:focus-visible{outline:3px solid currentColor;outline-offset:2px}
+#app.baseline-ui .media-shelf .library-controls{overflow:visible;max-height:none;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#app.baseline-ui .media-shelf .library-controls label{grid-column:1/-1}
+#app.baseline-ui .media-shelf :is(button,input,select){min-height:48px!important;font-size:1rem!important}
+#app.baseline-ui .playback-options[open]{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:0 12px 12px}
+#app.baseline-ui .playback-options>summary{width:100%}
+#app.baseline-ui .playback-options label{display:flex;align-items:center;gap:8px;flex:1 1 100%}
+#app.baseline-ui .playback-options input{min-width:0;flex:1}
+#app.baseline-ui .media-shelf .media-discovery{margin:0;border:0}
+#app.baseline-ui .video-panel #video-stage{flex:none;aspect-ratio:16/9;min-height:190px;margin:12px;border-radius:14px}
+#app.baseline-ui .video-panel .video-actions{flex-wrap:wrap}
+#app.baseline-ui .video-panel .video-actions button{min-height:48px!important;min-width:100px;font-size:1rem!important}
+#app.baseline-ui .video-sources :is(.youtube-search,.video-discovery){padding:10px!important;display:flex;flex-wrap:wrap;gap:8px}
+#app.baseline-ui .video-sources #youtube-query{flex:1 1 100%;min-width:0}
+#app.baseline-ui .video-sources .video-tabs{overflow-x:auto}
+@media(prefers-reduced-motion:reduce){#app.baseline-ui .audio-spectrum{display:none}#app.baseline-ui .album-disc{animation:none}}

@@ -1,0 +1,38 @@
+{
+  "openers": [
+    "{name}, a small thought for a busy day.",
+    "Something worth your attention, {name}.",
+    "A little useful mischief, {name}.",
+    "{name}, allow me a brief diversion.",
+    "A fresh thought, served without the silverware.",
+    "Here is something to keep the grey cells entertained, {name}.",
+    "{name}, your curiosity called. I answered.",
+    "One useful idea, coming right up.",
+    "{name}, a moment of perspective.",
+    "Something interesting has made the short list.",
+    "{name}, a brief intermission from the ordinary.",
+    "A small discovery, neatly presented.",
+    "{name}, here is a thought worth keeping.",
+    "I have something rather good for you, {name}.",
+    "{name}, let us give the routine a small holiday.",
+    "A morsel for the mind, {name}.",
+    "{name}, a little light reading for the ears.",
+    "Here is something beyond the usual weather report.",
+    "{name}, a useful thought has arrived.",
+    "One small idea. No appointment necessary.",
+    "{name}, consider this a curiosity on the house.",
+    "A little perspective, freshly polished.",
+    "{name}, I have spared you the long preamble.",
+    "A thought for you, {name}. I shall keep it brief."
+  ],
+  "capabilities": [
+    "Ask for today\u2019s briefing and I will read the fetched headlines.",
+    "Tell me a task and a time to arrange a reminder.",
+    "Say keep quiet for fifteen minutes when you need space.",
+    "Ask me to compare coverage of a news story.",
+    "Choose your exchange to follow its available market quotes.",
+    "Ask for a joke, a science fact or a thoughtful story.",
+    "Tell me your interests to make suggestions more relevant.",
+    "Say stop briefing whenever you have heard enough."
+  ]
+}

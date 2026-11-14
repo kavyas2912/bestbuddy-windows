@@ -1,0 +1,26 @@
+/* Phone layout keeps the same features and top navigation as the desktop app. */
+@media (max-width: 700px) {
+  html, body, #app { height: 100dvh; }
+  #app .app-shell {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  #app .workspace, #app .dashboard { min-height: 0 !important; min-width: 0 !important; }
+  #app .brand { min-width: 0; flex-shrink: 1; }
+  #app .topbar { flex-wrap: wrap; }
+  #app .desktop-context-bar { height: auto !important; flex-basis: auto !important; flex-wrap: wrap; gap: 6px 12px !important; }
+  #app .desktop-widget-nav { flex-wrap: nowrap !important; flex-shrink: 0; overflow-x: auto !important; overscroll-behavior-x: contain; }
+  #app .desktop-widget-nav button { flex: 0 0 auto; min-height: 44px !important; }
+  #app .panel-tools { flex-wrap: wrap; }
+  #app .action-btn, #app .talk-button, #app .source-btn, #app .refresh,
+  #app .calendar-nav button, #app .chat-compose button { min-height: 44px !important; }
+  #app input, #app textarea, #app select { font-size: 16px; max-width: 100%; }
+  #app .modal-card { max-width: 96vw; max-height: 94dvh; overflow-y: auto; }
+  #app .watchlist-editor, #app .market-control-bar { flex-wrap: wrap; }
+  #app .watchlist-editor input { min-width: 0; width: 100%; }
+  #app .chat-compose { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+  #app .bubble { overflow-wrap: anywhere; }
+  #app .butler-entrance { bottom: max(76px, env(safe-area-inset-bottom)); }
+}

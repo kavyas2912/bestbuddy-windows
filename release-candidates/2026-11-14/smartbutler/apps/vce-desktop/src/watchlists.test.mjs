@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {reviewWatchlistCsv,normalizeWatchEntry,mergeWatchlist} from '../dist-test/watchlists.js';
+const exchanges=[{id:'India',name:'NSE/BSE',country:'India',symbol_suffix:'.NS'},{id:'USA',name:'NYSE/Nasdaq',country:'United States',symbol_suffix:''},{id:'Hong Kong',name:'HKEX',country:'Hong Kong',symbol_suffix:'.HK'}];
+let result=reviewWatchlistCsv('\uFEFFSymbol,Name,Exchange\r\nRELIANCE,"Reliance, Industries",NSE\r\nSBIN,State Bank,BSE\r\nAAPL,Apple,NASDAQ\r\n0700,Tencent,HKEX\r\nRELIANCE.NS,Duplicate,India','India',exchanges);
+assert.deepEqual(result.entries.map(x=>x.symbol),['RELIANCE.NS','SBIN.BO','AAPL','0700.HK']);assert.equal(result.entries[0].name,'Reliance, Industries');assert.equal(result.duplicates,1);
+assert.equal(reviewWatchlistCsv('Ticker;Name;Exchange\nAAPL;"Apple ""Inc""";USA','India',exchanges).entries[0].name,'Apple "Inc"');
+assert.equal(reviewWatchlistCsv('Symbol\tName\nAAPL\tApple','USA',exchanges).entries[0].symbol,'AAPL');
+assert.equal(reviewWatchlistCsv('AAPL\nMSFT\n','USA',exchanges).entries.length,2);
+result=reviewWatchlistCsv('Symbol,Name\nAAPL,"A company\nwith a long name"\n=EVIL(),bad\nMSFT,Microsoft','USA',exchanges);assert.equal(result.entries.length,2);assert.equal(result.warnings.length,1);
+assert.throws(()=>reviewWatchlistCsv('Symbol,Name\nAAPL,"bad','USA',exchanges),/unclosed/);
+assert.throws(()=>reviewWatchlistCsv('Symbol\nAAPL','unknown',exchanges),/Unknown exchange/);
+assert.throws(()=>reviewWatchlistCsv('a'.repeat(262145),'USA',exchanges),/256 KB/);
+assert.equal(normalizeWatchEntry('BSE:SBIN','','India',exchanges).symbol,'SBIN.BO');
+assert.equal(normalizeWatchEntry('7','','Hong Kong',exchanges).symbol,'0007.HK');
+assert.equal(mergeWatchlist(result.entries,[result.entries[0]]).length,2);
+assert.equal(mergeWatchlist(result.entries,[result.entries[0]],true).length,1);
+assert.throws(()=>mergeWatchlist([],Array.from({length:51},(_,i)=>({symbol:`S${i}`,name:'',exchange:'USA'}))),/51 symbols/);
+console.log('CSV imports: quoting, broker headers, exchanges, duplicates, limits and draft merging passed');

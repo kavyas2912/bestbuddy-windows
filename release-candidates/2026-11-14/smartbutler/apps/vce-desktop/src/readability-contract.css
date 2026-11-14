@@ -1,0 +1,100 @@
+@layer theme-roles;
+@layer theme-roles {
+/* Content uses surface/ink roles; the accent gradient is reserved for actions. */
+:root {
+  --button-text: var(--text-primary);
+  --button-strong-text: var(--button-text);
+  --button-hover-text: var(--text-primary);
+}
+#app.baseline-ui :is(.current-weather,.weather-top,.weather-timecopy,.calendar-month,.daybook-left,.daybook-events,.weather-city-bar,.weather-city-buttons,.device-report,.settings-detail,.stock-section,.stock-stats,.company-news-list,.watchlist-entry,.contact-choice,.registration-provider) {
+  background: var(--surface-raised) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-ui) !important;
+}
+#app.baseline-ui :is(.weather-graphic,.current-temp,.current-condition,.weather-clockline,.big-time,.mini-day,.big-date,.weather-facts,.daybook-date,.calendar-heading) {
+  color: var(--text-primary) !important;
+  background: transparent !important;
+}
+#app.baseline-ui .weather-facts span {
+  background: var(--surface) !important;
+  color: var(--text-primary) !important;
+}
+#app.baseline-ui :is(.forecast-card,.forecast-card.today) {
+  background: var(--surface-raised) !important;
+  color: var(--text-primary) !important;
+}
+#app.baseline-ui .forecast-card :is(b,strong,span,small,p,div) { color: inherit !important; }
+#app.baseline-ui :is(.current-weather,.weather-top,.weather-timecopy) :is(h2,h3,b,strong,p,small,label) { color: inherit !important; }
+#app.baseline-ui :is(button,.btn,.action-btn,.source-btn,.setting-tile,.contact-action) {
+  --bs-btn-color: var(--text-primary);
+  --bs-btn-bg: var(--surface-raised);
+  --bs-btn-hover-color: var(--text-primary);
+  --bs-btn-hover-bg: var(--surface);
+  --bs-btn-active-color: var(--button-text);
+  --bs-btn-active-bg: var(--button-bg);
+  color: var(--text-primary) !important;
+  background: linear-gradient(180deg,var(--surface-raised),var(--surface)) !important;
+  text-shadow: none !important;
+  opacity: 1;
+}
+#app.baseline-ui :is(button,.btn):is(.active,[aria-selected="true"],[aria-pressed="true"],.talk-button,.primary-wide),
+#app.baseline-ui .action-btn:not(.ghost),
+#app.baseline-ui #briefing-now {
+  color: var(--button-text) !important;
+  background: var(--button-bg) !important;
+}
+#app.baseline-ui :is(button,.btn) :is(b,strong,span,small) { color: inherit !important; }
+#app.baseline-ui :is(button,.btn):hover:not(:disabled) { border-color: var(--focus-ui) !important; }
+#app.baseline-ui :is(button,.btn):disabled {
+  background: var(--surface) !important;
+  color: var(--text-disabled) !important;
+  opacity: 1 !important;
+}
+#app.baseline-ui :is(input,select,textarea,option) {
+  color: var(--text-primary) !important;
+  -webkit-text-fill-color: var(--text-primary);
+  background-color: var(--bg) !important;
+}
+#app.baseline-ui input::placeholder,#app.baseline-ui textarea::placeholder {
+  color: var(--text-secondary) !important;
+  -webkit-text-fill-color: var(--text-secondary);
+  opacity: 1 !important;
+}
+#app.baseline-ui :is(.review-danger,.danger-zone) button,
+#app.baseline-ui :is(#profile-erase,#erase-confirm) {
+  color: var(--danger-button-text) !important;
+  background: var(--danger-bg) !important;
+  border-color: var(--danger-border) !important;
+}
+#app.baseline-ui :is(.review-danger,.danger-zone) { color: var(--danger-text) !important; background: var(--danger-surface) !important; }
+#app.baseline-ui :is(.review-danger,.danger-zone) :is(p,span,small,h3,h4,b,strong,label) { color: inherit !important; }
+#app.baseline-ui .stock-stats :is(dt,dd) { color: var(--text-primary) !important; }
+#app.baseline-ui .market-chart polyline { stroke: var(--focus-ui) !important; }
+#app.baseline-ui :is(.up,.positive) { color: var(--positive-ui) !important; }
+#app.baseline-ui :is(.down,.negative) { color: var(--negative-ui) !important; }
+#app.baseline-ui :is(.market-card,.watchlist-price-rows button) :is(.up,.positive) { color: var(--positive-ui) !important; }
+#app.baseline-ui :is(.market-card,.watchlist-price-rows button) :is(.down,.negative) { color: var(--negative-ui) !important; }
+/* An opaque legacy highlight must never paint over header text. */
+#app.baseline-ui .topbar::before { content: none !important; }
+#app.baseline-ui .theme-grid [data-theme-choice] { text-shadow: none !important; }
+
+#app.baseline-ui .theme-grid [data-theme-choice]{background:revert-layer!important;color:revert-layer!important;}
+
+#app.baseline-ui :is(input,select,textarea):disabled {opacity:1!important;color:var(--text-disabled)!important;-webkit-text-fill-color:var(--text-disabled)!important;background-color:var(--bg)!important;}
+#app.baseline-ui .panel-icon {color:var(--text-primary)!important;background:var(--surface)!important;}
+#app.baseline-ui :is(button,input,select,textarea,summary):focus-visible {outline:2px solid var(--text-primary)!important;outline-offset:2px!important;}
+html[data-bs-theme="light"] {color-scheme:light!important;} html[data-bs-theme="dark"] {color-scheme:dark!important;}
+#app.baseline-ui .panel-head {height:auto!important;flex:0 0 auto!important;min-height:36px!important;padding:4px 10px!important;}
+#app.baseline-ui .panel-head :is(h2,h3){font:500 15px/1.3 var(--font-ui)!important;margin:0!important;}
+}
+
+#app.baseline-ui .local-scan-tools{display:grid;grid-template-columns:minmax(140px,1fr) auto;gap:6px;margin-top:7px;align-items:center}#app.baseline-ui .local-scan-tools small{grid-column:1/-1;font-size:12px;line-height:1.4;color:var(--text-secondary)}
+
+@layer theme-roles {
+#app.baseline-ui .analog-clock :is(.hour,.minute){background:var(--text-primary)!important;}
+#app.baseline-ui .analog-clock .second{background:var(--negative-ui)!important;}
+#app.baseline-ui .desktop-widget-nav .connections-nav-link{display:grid!important;grid-template-columns:20px minmax(0,1fr)!important;gap:6px!important;white-space:nowrap!important;}
+#app.baseline-ui .desktop-widget-nav .connections-nav-link span{white-space:nowrap!important;font-size:13px!important;}
+#app.baseline-ui .phone-primary-nav .connections-nav-link{min-width:80px!important;flex:0 0 80px!important;}
+}
+html[data-product="companion"]:not(.phone-mode) #app.baseline-ui .workspace{grid-template-columns:135px minmax(0,1fr)!important;}

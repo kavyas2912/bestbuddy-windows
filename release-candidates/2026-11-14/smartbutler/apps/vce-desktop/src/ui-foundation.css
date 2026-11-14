@@ -1,0 +1,94 @@
+/* Shared surface and layout contract. Imported last; legacy palettes cannot leak into dialogs. */
+:root{color-scheme:dark}
+#app,#app *,#app *::before,#app *::after{box-sizing:border-box}
+#app :is(.modal-card,.panel,.settings-shell,.settings-content,.settings-view,.registration-body,.model-section,.model-inline,.model-field,.market-card,.stock-section,.stock-stats,.watchlist-add,.schedule-fields,.review-tabpanel)>*{min-width:0;max-width:100%}
+#app :is(.modal-card,.settings-card,.watchlist-popover){background:var(--surface)!important;color:var(--text-primary)!important;border-color:var(--border-ui)!important}
+#app :is(.modal-card,.watchlist-popover) :is(h1,h2,h3,h4,h5,p,span,small,dt,dd,label,legend,summary,li,a,b,strong,em,code,pre){color:var(--text-primary)!important;opacity:1!important;overflow-wrap:anywhere}
+#app :is(.modal-card,.watchlist-popover) :is(small,dt,.catalog-note,.stock-chart-labels,.stock-symbol,.source-chip),#app #briefing-progress{color:var(--text-secondary)!important}
+#app :is(.stock-stats>div,.model-status,.settings-action-result,.settings-summary-row,.device-report,.voice-tuning,.composer-box,.watchlist-import){background:var(--surface-raised)!important;color:var(--text-primary)!important;border-color:var(--border-ui)!important}
+#app :is(button,input,select,textarea){font-family:var(--font-ui)!important;min-width:0;max-width:100%;line-height:1.35!important}
+#app :is(input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea){color:var(--text-primary)!important;background:var(--surface-raised)!important;border-color:var(--border-ui)!important;padding:4px 7px!important}
+#app button{color:var(--text-primary)!important;background:var(--button-bg)!important;border-color:var(--border-ui)!important;padding:4px 8px!important;height:auto;max-height:none;min-height:30px;overflow-wrap:anywhere}
+#app button:disabled{color:var(--text-disabled)!important;background:var(--button-disabled)!important;opacity:1!important}
+#app button:focus-visible,#app :is(input,select,textarea):focus-visible{outline:2px solid var(--focus-ui)!important;outline-offset:2px}
+#app :is(.modal-card,.watchlist-popover) button :is(span,small,b,strong,p){color:inherit!important}
+#app :is(.up,.modal-card .up){color:var(--positive-ui)!important}#app :is(.down,.modal-card .down){color:var(--negative-ui)!important}
+#app :is(.review-danger,.danger-zone){background:var(--danger-surface)!important;color:var(--danger-text)!important;border-color:var(--danger-border)!important}#app :is(#profile-erase,#erase-confirm){background:var(--danger-bg)!important;color:var(--danger-text)!important}
+/* A header may grow for its content. Actions scroll horizontally instead of covering titles. */
+#app :is(.widget-header-unified,.panel>.panel-head){height:auto!important;min-height:44px!important;max-height:none!important;flex:0 0 auto!important;padding:5px 8px!important;overflow:visible!important;gap:6px!important}
+#app .panel-head .panel-title{min-width:0!important;flex:0 1 auto!important;max-width:55%!important}
+#app .panel-head .panel-title :is(h2,.eyebrow){white-space:normal!important;overflow-wrap:anywhere;line-height:1.25!important}
+#app .panel-head .panel-tools{min-width:0!important;flex:1 1 0!important;justify-content:flex-end;overflow-x:auto!important;overflow-y:hidden!important;flex-wrap:nowrap!important}
+#app .panel-head :is(button,select){height:auto!important;min-height:28px!important;max-height:none!important;flex-shrink:0!important}
+#app :is(.tabs,.market-tabs,.workspace-tabs,.model-stage-tabs,.model-pages,.settings-page-tabs,.review-tabs,.persona-shelf,.stock-range,.company-market-actions,.settings-page-actions){display:flex;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;min-width:0;max-width:100%;gap:5px!important;padding:4px 0!important;scrollbar-width:thin}
+#app :is(.tabs,.market-tabs,.workspace-tabs,.model-stage-tabs,.model-pages,.settings-page-tabs,.review-tabs,.persona-shelf,.stock-range,.company-market-actions,.settings-page-actions)>button{flex:0 0 auto!important;white-space:nowrap!important;max-width:none!important}
+/* One bounded settings frame, one content scroller. Children do not get viewport-sized widths/heights. */
+#app #settings-panel .settings-card{width:min(1120px,calc(100vw - 20px))!important;height:min(780px,calc(100dvh - 20px))!important;max-height:calc(100dvh - 20px)!important;display:flex!important;flex-direction:column!important;padding:10px!important;overflow:hidden!important;gap:6px!important}
+#app #settings-panel .settings-header{display:flex!important;align-items:center!important;height:auto!important;min-height:38px!important;max-height:none!important;flex:0 0 auto!important;padding:3px 38px 3px 0!important;overflow:visible!important}
+#app .settings-speech-tools{margin:3px 0 0!important;gap:4px!important;flex:0 0 auto}
+#app #settings-panel .settings-shell{width:100%!important;max-width:100%!important;height:auto!important;max-height:none!important;min-height:0!important;flex:1 1 0!important;display:grid!important;grid-template-columns:190px minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr)!important;gap:8px!important;overflow:hidden!important}
+#app #settings-panel .settings-content{min-width:0!important;min-height:0!important;height:auto!important;padding:6px!important;overflow:auto!important;scrollbar-gutter:stable}
+#app #settings-panel .settings-view{height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;gap:6px!important;padding:0!important;align-content:start!important}
+#app #settings-panel .settings-view:not(.hidden){display:flex!important;flex-direction:column!important}
+#app #settings-panel :is(.settings-nav,.settings-view>*,[data-model-part],.speech-settings-body,.review-tabpanel){min-height:0!important;min-width:0!important;flex-shrink:0!important}
+#app #settings-panel :is([data-model-part],.speech-settings-body,.review-tabpanel){height:auto!important;overflow:visible!important}
+#app #settings-panel .settings-action-result:empty,#app #registration-error:empty{display:none!important}
+#app :is(.model-inline,.voice-filter-line,.watchlist-add,.schedule-fields,.stock-stats,.settings-summary){gap:6px!important}
+#app :is(.model-inline,.onboard-inline){flex-wrap:wrap!important;align-items:end!important}
+#app :is(.model-inline,.onboard-inline)>label{flex:1 1 180px!important;min-width:0!important}
+#app :is(.settings-view,.registration-body) :is(fieldset,.model-section,.device-report,.voice-tuning,.onboard-section){padding:6px!important;margin:0!important}
+#app :is(.settings-view,.registration-body) :is(p,label){margin:3px 0!important;line-height:1.4!important}
+/* Stock detail keeps its close control in a real header and scrolls only the report. */
+#app #market-modal{padding:10px!important;align-items:center!important}
+#app #market-modal .market-detail-card{width:min(920px,100%)!important;max-width:100%!important;max-height:calc(100dvh - 20px)!important;display:flex!important;flex-direction:column!important;padding:0!important;overflow:hidden!important}
+#app .dialog-header{display:flex;align-items:start;gap:8px;flex:0 0 auto;padding:8px 10px;border-bottom:1px solid var(--border-ui);background:var(--surface-header);color:var(--text-primary)}
+#app .dialog-header h2{flex:1;min-width:0;margin:0!important;font-size:16px!important;font-weight:500!important;line-height:1.35!important;overflow-wrap:anywhere}
+#app .dialog-header .modal-close{position:static!important;flex:0 0 30px!important;width:30px!important;min-width:30px!important;height:30px!important;min-height:30px!important;padding:0!important;line-height:1!important;margin:0!important}
+#app #market-detail{min-height:0;overflow:auto;padding:10px;scrollbar-gutter:stable}
+#app .stock-range{margin:6px 0!important}#app .stock-stats{grid-template-columns:repeat(auto-fit,minmax(min(130px,100%),1fr))!important;margin:8px 0!important;gap:6px!important}
+#app .stock-stats>div{padding:7px!important;min-width:0}#app .stock-stats dd{margin:3px 0 0!important;font-size:15px!important;font-weight:400!important}
+#app .stock-section{padding:10px 0!important;border-color:var(--border-ui)!important}#app .stock-section h3{font-family:var(--font-ui)!important;font-size:15px!important;font-weight:500!important;margin:0 0 6px!important}
+#app .stock-chart-labels{gap:8px;line-height:1.4;flex-wrap:wrap}#app .market-chart{background:var(--surface-raised)!important;max-width:100%;max-height:220px!important}#app .market-chart polyline{stroke:var(--focus-ui)!important}
+#app :is(.stock-section,.modal-card) :is(.news-copy,.coverage-story,.company-news-list,.market-components)>*{min-width:0;overflow-wrap:anywhere}
+#app .market-components{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));gap:6px}
+#app :is(.stock-section,.modal-card) :is(.news-row,.coverage-story,.company-news-list button){height:auto!important;max-height:none!important;min-height:0!important;padding:7px!important;background:var(--surface-raised)!important;color:var(--text-primary)!important}
+#app .watchlist-popover{max-width:calc(100% - 16px)!important}#app .watchlist-price-rows button>span{min-width:0;overflow-wrap:anywhere}
+#app .registration form{display:flex!important;min-width:0!important;min-height:0!important;overflow:hidden!important}#app .registration-body{min-width:0!important;min-height:0!important;overflow:auto!important;gap:6px!important}
+#app .registration-actions{position:static!important;flex:0 0 auto!important;flex-wrap:nowrap!important;overflow-x:auto!important;max-width:100%;gap:4px!important;padding:4px 0 0!important}
+#app .registration-actions button{flex-shrink:0!important;white-space:nowrap!important}
+@media(max-width:900px){#app #settings-panel .settings-shell{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto minmax(0,1fr)!important;gap:5px!important}#app #settings-panel .settings-nav{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;width:100%!important;padding:3px 0!important;gap:4px!important}#app #settings-panel .settings-nav>button{flex:0 0 auto!important;width:auto!important;white-space:nowrap!important}#app #settings-panel .settings-content{padding:4px 0!important}}
+@media(max-width:480px){#app .registration-body:has(>label>[data-field]),#app .registration :is(fieldset[data-contact],fieldset[data-reminder]),#app .watchlist-add{grid-template-columns:minmax(0,1fr)!important}#app .settings-summary{grid-template-columns:repeat(2,minmax(0,1fr))!important}#app .stock-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}#app .panel-head .panel-title{max-width:46%!important}}
+
+#app{font-family:var(--font-ui)!important;font-weight:400!important}
+ #app :is(h1,h2,h3,h4,h5,button,label,p,span,small,select,input,textarea){font-family:var(--font-ui)!important}
+ #app :is(button,label,select,input,textarea){font-weight:400!important}
+ #app :is(.panel-head,.settings-header,.dialog-header){background:var(--surface-header)!important;color:var(--text-primary)!important}
+ #app button:hover{background:var(--button-hover)!important}
+ #app button:is(.active,[aria-selected=true]){background:var(--button-active)!important;color:var(--text-primary)!important}
+ #app .theme-picker{display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap}
+ #app .theme-picker select{width:240px;max-width:100%}
+ :root[data-app-theme="flatly"] #app :is(#profile-erase,#erase-confirm){color:#fff!important}
+ 
+/* Dialog chrome stays outside the scrollable report; hidden rows cannot cover it. */
+#app .dialog-header{position:relative;z-index:2}
+#app #market-detail{position:relative;isolation:isolate}
+#app :is(.modal-card,.watchlist-popover){border-radius:var(--radius-card)!important}
+#app button{border-radius:var(--radius-control)!important}
+#app :is(.modal-card h2,.panel-head h2){font-size:var(--font-heading)!important;font-weight:500!important}
+#app :is(.panel-head,.dialog-header){gap:var(--space-2)!important}
+#app :is(button,input,select,option,textarea,label,p,small,span,b,strong,summary,legend,.bubble,.news-copy,.market-card){font-stretch:normal!important}
+
+#app .modal{padding:10px;align-items:center;justify-content:center}
+#app .modal-card{position:relative;max-width:calc(100vw - 20px);max-height:calc(100dvh - 20px);overflow:auto;padding:var(--space-4);box-shadow:var(--shadow-elevated)}
+#app .modal-card:not(.market-detail-card)>h2{padding-right:36px;margin:0 0 var(--space-3);line-height:1.35}
+#app .modal-close{width:30px;height:30px;min-height:30px;display:grid;place-items:center;line-height:1}
+
+/* Consolidated topic navigation: sources stay available; repeated page titles do not. */
+#app #news-tabs{flex-wrap:nowrap!important;overflow-x:auto!important;white-space:nowrap;flex-shrink:0}
+#app #news-tabs>button{flex:0 0 auto;text-transform:none!important;font-weight:400!important}
+#app .news-topic-choices{display:flex;flex-direction:column;gap:6px;padding:8px}
+#app .news-topic-choices button{min-height:48px;text-align:left}
+#app .business-scope-choice{align-items:center;gap:8px;padding:4px 10px;margin:0;flex-shrink:0;font-weight:400}
+#app .business-scope-choice select{width:auto;max-width:100%;min-width:0}
+#app .market-tabs:has([data-market-view="business-world"].active) [data-market-view="market-news"],#app .market-tabs:has([data-market-view="business-national"].active) [data-market-view="market-news"]{background:var(--button-active-bg,var(--button-bg))!important;color:var(--text-primary)!important}
+#app .news-row .news-copy b{font-weight:400!important}

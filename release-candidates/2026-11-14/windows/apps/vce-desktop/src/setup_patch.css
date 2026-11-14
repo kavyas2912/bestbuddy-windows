@@ -1,0 +1,68 @@
+@layer theme-roles {
+ #app .registration-splash .registration-actions {display:flex!important;flex-wrap:wrap;gap:5px!important;justify-content:flex-start!important;align-items:center!important}
+ #app .registration-splash #splash-begin {flex-basis:100%!important;width:100%!important;margin-top:4px!important}
+ #app .registration-splash :is(#splash-replay,[data-quiet-speech]) {font-size:12px!important;line-height:1.2!important;padding:4px 8px!important;min-height:26px!important;width:auto!important;flex:0 0 auto!important}
+ #app .registration-splash {padding-block:12px!important;gap:6px!important}
+ #app .registration-splash .splash-orbit {max-height:110px!important;margin-block:4px!important}
+ #app .registration-splash .splash-orbit img {max-height:108px!important;width:auto!important}
+ #app .registration :is(.onboard-section,.check,label) {color:var(--text-primary)!important;opacity:1!important}
+ #app .registration .check {background:var(--surface-raised)!important;padding:5px 8px!important;border-radius:6px!important}
+ #app .registration input:is([type=checkbox],[type=radio]) {appearance:auto!important;accent-color:var(--text-primary)!important;width:18px!important;height:18px!important;flex:0 0 18px!important;opacity:1!important}
+ #app .model-backing-select {display:none!important}
+ #app .local-model-chooser {position:relative!important;min-width:0!important;width:100%!important}
+ #app .local-model-chooser summary {background:var(--surface-raised)!important;color:var(--text-primary)!important;border:1px solid var(--border-ui)!important;border-radius:7px!important;padding:7px 10px!important;cursor:pointer!important;white-space:normal!important}
+ #app .local-model-groups {background:var(--surface-raised)!important;color:var(--text-primary)!important;max-height:250px!important;overflow:auto!important;border:1px solid var(--border-ui)!important;border-radius:7px!important;padding:6px!important}
+ #app .model-choice-box {border-top:1px solid var(--border-ui)!important;padding:6px 0!important}
+ #app .model-choice-box h4 {font:inherit!important;margin:3px 6px!important}
+ #app .model-choice-box ul {padding-left:22px!important;margin:4px 0!important;list-style:disc!important}
+ #app .model-choice-box button {text-align:left!important;white-space:normal!important;font:inherit!important;padding:4px 6px!important;min-height:28px!important;width:100%!important}
+ #app .local-scan-tools {display:flex!important;flex-wrap:wrap!important;gap:5px!important;align-items:center!important}
+ #app .speaker-radio-list {display:grid!important;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))!important;gap:5px!important}
+ #app .setup-radio {display:flex!important;align-items:center!important;gap:7px!important;background:var(--surface-raised)!important;color:var(--text-primary)!important;border:1px solid var(--border-ui)!important;border-radius:7px!important;padding:7px!important;font-weight:400!important}
+ #app .setup-radio input {appearance:auto!important;accent-color:var(--text-primary)!important;width:18px!important;height:18px!important;flex:0 0 18px!important}
+ .setup-help-dialog {background:var(--surface-raised)!important;color:var(--text-primary)!important;border:1px solid var(--border-ui)!important;border-radius:12px!important;width:min(560px,calc(100vw - 24px))!important;max-height:calc(100dvh - 24px)!important;overflow:auto!important;padding:16px!important;font:inherit!important}
+ .setup-help-dialog::backdrop {background:rgba(0,0,0,.6)!important}
+ .setup-help-dialog button {background:var(--button-bg)!important;color:var(--button-text)!important;border:1px solid var(--border-ui)!important;border-radius:7px!important;padding:6px 10px!important;font:inherit!important}
+ .setup-help-actions {display:flex!important;flex-wrap:wrap!important;gap:6px!important}
+ .preparation-wait {position:fixed!important;inset:0!important;z-index:22000!important;background:var(--surface-raised)!important;color:var(--text-primary)!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;padding:24px!important;text-align:center!important}
+ .preparation-wait p {max-width:580px!important;color:inherit!important}
+ .preparation-spinner {width:38px!important;height:38px!important;border:3px solid var(--border-ui)!important;border-top-color:var(--text-primary)!important;border-radius:50%!important;animation:preparation-spin 1s linear infinite!important;margin-bottom:16px!important}
+ @media(max-width:600px){#app .registration-splash :is(#splash-replay,[data-quiet-speech]){min-height:44px!important}#app .model-choice-box button{min-height:44px!important}}
+ @media(prefers-reduced-motion:reduce){.preparation-spinner{animation:none!important;border-top-style:dashed!important}}
+}
+@keyframes preparation-spin {to{transform:rotate(360deg)}}
+
+@layer theme-roles {
+ #app .weather-reports {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;color:var(--text-primary)!important;background:var(--surface)!important;padding:8px!important;min-height:100px!important;overflow:auto!important;flex:0 0 auto!important}
+ #app .weather-reports section {background:var(--surface-raised)!important;color:var(--text-primary)!important;padding:8px!important;border-radius:7px!important;min-width:0!important}
+ #app .weather-reports h4 {font:inherit!important;margin:0 0 5px!important;color:inherit!important}
+ #app .weather-reports p {font-size:12px!important;color:inherit!important;margin:4px 0!important}
+ #app .weather-report-story {display:block!important;text-align:left!important;white-space:normal!important;width:100%!important;padding:5px 7px!important;margin-bottom:4px!important;background:var(--surface-raised)!important;color:var(--text-primary)!important;font:inherit!important;border:1px solid var(--border-ui)!important}
+ #app #registration-prepare-local,#app #llm-prepare-local {display:none!important}
+ @media(max-width:600px){#app .weather-reports{grid-template-columns:minmax(0,1fr)!important}#app .weather-report-story{min-height:44px!important}}
+}
+
+@layer theme-roles {#app .registration-splash .registration-actions{flex-direction:column!important;align-items:stretch!important;flex-wrap:nowrap!important}#app .splash-small-actions{display:flex!important;gap:5px!important;justify-content:flex-start!important;align-self:flex-start!important}#app .registration-splash #splash-begin{flex-basis:auto!important}}
+
+@layer theme-roles {
+ #app.baseline-ui .weather-panel{overflow-y:auto!important;min-height:0!important}
+ #app.baseline-ui .weather-overview{flex:0 0 auto!important;height:auto!important;min-height:0!important;max-height:none!important;padding:8px!important;gap:8px!important}
+ #app.baseline-ui :is(.current-weather,.weather-top){min-height:145px!important;height:auto!important;padding:12px!important}
+ #app.baseline-ui .forecast-row{flex:0 0 auto!important;min-height:128px!important;height:auto!important;align-items:stretch!important}
+ #app.baseline-ui .forecast-card{min-height:120px!important;height:auto!important;max-height:none!important;padding:7px!important;overflow:visible!important}
+ #app.baseline-ui .weather-city-bar{display:flex!important;flex-direction:row!important;align-items:center!important;gap:5px!important;flex-wrap:nowrap!important}
+ #app.baseline-ui .weather-city-buttons{flex:1 1 auto!important;min-width:0!important;overflow-x:auto!important}
+ #app.baseline-ui #add-city{flex:0 0 36px!important;width:36px!important;min-width:36px!important;align-self:center!important}
+ @media(max-width:700px){
+  #app.baseline-ui .weather-overview{padding:8px!important}
+  #app.baseline-ui .current-temp{font-size:54px!important;line-height:1.1!important}
+  #app.baseline-ui .weather-graphic{font-size:42px!important}
+  #app.baseline-ui .current-weather{min-height:128px!important;padding:12px!important}
+  #app.baseline-ui .forecast-row{gap:4px!important;padding:4px!important}
+  #app.baseline-ui .forecast-card{padding:5px 3px!important;min-width:0!important;min-height:126px!important;flex:1 0 0!important}
+  #app.baseline-ui .forecast-card strong{font-size:22px!important;line-height:1.1!important}
+  #app.baseline-ui #add-city{flex-basis:44px!important;width:44px!important;min-width:44px!important;min-height:44px!important}
+ }
+}
+
+@layer theme-roles {.setup-help-dialog .download-access-fields{display:grid!important;gap:7px!important;margin-block:10px!important}.setup-help-dialog .download-access-fields label{display:grid!important;gap:4px!important;color:var(--text-primary)!important}.setup-help-dialog input{width:100%!important;min-width:0!important;background:var(--surface)!important;color:var(--text-primary)!important;border:1px solid var(--border-ui)!important;border-radius:6px!important;padding:6px!important;font:inherit!important}@media(max-width:700px){#app .registration-splash #splash-begin,#app .setup-radio{min-height:44px!important}}}
