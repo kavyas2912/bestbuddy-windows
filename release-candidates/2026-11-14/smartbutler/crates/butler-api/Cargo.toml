@@ -1,0 +1,11 @@
+[package]
+name="butler-api"
+version.workspace=true
+edition.workspace=true
+[dependencies]
+butler-core={path="../butler-core"}
+butler-plugin={path="../butler-plugin"}
+butler-voice={path="../butler-voice"}
+serde.workspace=true
+serde_json.workspace=true
+tokio.workspace=true

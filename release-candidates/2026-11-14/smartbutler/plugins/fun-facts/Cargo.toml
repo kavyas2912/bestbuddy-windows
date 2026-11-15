@@ -1,0 +1,10 @@
+[package]
+name = "butler-plugin-fun-facts"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+butler-plugin = { path = "../../crates/butler-plugin" }
+async-trait.workspace = true
+serde.workspace = true
+serde_json.workspace = true

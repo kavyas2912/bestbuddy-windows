@@ -1,0 +1,114 @@
+[
+  {
+    "group": "essential-voice",
+    "component": "asr",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-base.en.tar.bz2",
+    "target": "asr/sherpa-onnx-whisper-base.en",
+    "archive_sha256": "475BC7052CE299C007F6D5D5407BA8601F819A2867F6EECEE510ED17DF581542",
+    "install_mode": "DOWNLOAD_WHILE_BUILDING_AND_EMBED_MSIX",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "essential-voice",
+    "component": "tts",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-lessac-medium.tar.bz2",
+    "target": "tts/vits-piper-en_US-lessac-medium",
+    "archive_sha256": "",
+    "install_mode": "DOWNLOAD_WHILE_BUILDING_AND_EMBED_MSIX",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "essential-voice",
+    "component": "vad",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx",
+    "target": "vad/silero_vad.onnx",
+    "archive_sha256": "9E2449E1087496D8D4CABA907F23E0BD3F78D91FA552479BB9C23AC09CBB1FD6",
+    "install_mode": "DOWNLOAD_WHILE_BUILDING_AND_EMBED_MSIX",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "essential-voice",
+    "component": "kws",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/kws-models/sherpa-onnx-kws-zipformer-gigaspeech-3.3M-2024-01-01.tar.bz2",
+    "target": "kws/sherpa-onnx-kws-zipformer-gigaspeech-3.3M-2024-01-01",
+    "archive_sha256": "",
+    "install_mode": "DOWNLOAD_WHILE_BUILDING_AND_EMBED_MSIX",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "essential-voice",
+    "component": "denoise",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speech-enhancement-models/gtcrn_simple.onnx",
+    "target": "denoise/gtcrn_simple.onnx",
+    "archive_sha256": "E77603AC0C23DAC3227DD2D7135B3A585CBEE2679048AECFA886657D3AE1B534",
+    "install_mode": "DOWNLOAD_WHILE_BUILDING_AND_EMBED_MSIX",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "build-only",
+    "component": "sherpa-onnx-1.13.8-native",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.8/sherpa-onnx-v1.13.8-win-x64-static-MT-Release-lib.tar.bz2",
+    "target": "tools/cache/sherpa-onnx/sherpa-onnx-v1.13.8-win-x64-static-MT-Release-lib.tar.bz2",
+    "archive_sha256": "56FFCF3C454C1F14F7BC9887286CC8143E7E542DC632804E1C447D5F8D534EAF",
+    "install_mode": "DOWNLOAD_TO_COMPILE_NOT_A_RUNTIME_DOWNLOAD",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "optional-intelligence",
+    "component": "Qwen3-0.6B-Q8_0.gguf",
+    "source_url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/resolve/main/Qwen3-0.6B-Q8_0.gguf?download=true",
+    "target": "app-data/models/llm/Qwen3-0.6B-Q8_0.gguf",
+    "archive_sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+    "install_mode": "OPT_IN_IN_APP_AFTER_INSTALL",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "optional-intelligence",
+    "component": "Qwen3-1.7B-Q4_K_M.gguf",
+    "source_url": "https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/resolve/main/Qwen3-1.7B-Q4_K_M.gguf?download=true",
+    "target": "app-data/models/llm/Qwen3-1.7B-Q4_K_M.gguf",
+    "archive_sha256": "d2387ca2dbfee2ffabce7120d3770dadca0b293052bc2f0e138fdc940d9bc7b5",
+    "install_mode": "OPT_IN_IN_APP_AFTER_INSTALL",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "optional-voice",
+    "component": "vits-piper-en_GB-cori-medium",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_GB-cori-medium.tar.bz2",
+    "model_card": "https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_GB/cori/medium/MODEL_CARD",
+    "target": "app-data/voices/vits-piper-en_GB-cori-medium",
+    "archive_sha256": "49c9a5361bbdd95d7ca9687c4de11e5908481f65e7c7c368960df79949fdac2b",
+    "install_mode": "OPT_IN_IN_APP_AFTER_INSTALL",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "optional-voice",
+    "component": "vits-piper-en_US-kristin-medium",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-kristin-medium.tar.bz2",
+    "model_card": "https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_US/kristin/medium/MODEL_CARD",
+    "target": "app-data/voices/vits-piper-en_US-kristin-medium",
+    "archive_sha256": "c2206f572df2956c50b1ae3367eebce3853c663e890cba8048cd62b1e4dbe6c7",
+    "install_mode": "OPT_IN_IN_APP_AFTER_INSTALL",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "optional-voice",
+    "component": "vits-piper-en_US-joe-medium",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-joe-medium.tar.bz2",
+    "model_card": "https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_US/joe/medium/MODEL_CARD",
+    "target": "app-data/voices/vits-piper-en_US-joe-medium",
+    "archive_sha256": "261b903a1fb2ce621e2b5b14233cd41223c3b9f9590f896c11daee4df22d9bd3",
+    "install_mode": "OPT_IN_IN_APP_AFTER_INSTALL",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  },
+  {
+    "group": "optional-voice",
+    "component": "vits-piper-en_US-john-medium",
+    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-john-medium.tar.bz2",
+    "model_card": "https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_US/john/medium/MODEL_CARD",
+    "target": "app-data/voices/vits-piper-en_US-john-medium",
+    "archive_sha256": "d90362cfa48e429d3096f644785184446145b6e38216f2eaf4c0601b8aad5a36",
+    "install_mode": "OPT_IN_IN_APP_AFTER_INSTALL",
+    "license_review": "REQUIRED_BEFORE_PUBLICATION"
+  }
+]

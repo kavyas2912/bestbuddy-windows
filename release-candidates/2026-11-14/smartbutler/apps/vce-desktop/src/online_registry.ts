@@ -1,0 +1,10 @@
+export const onlineProviders=[
+ {id:'openrouter',name:'OpenRouter',model:'openrouter/free',models:['openrouter/free'],url:'https://openrouter.ai/keys',guide:'https://openrouter.ai/pricing',note:'Live zero-price models · rate limits'},
+ {id:'groq',name:'Groq',model:'openai/gpt-oss-20b',models:['openai/gpt-oss-20b','openai/gpt-oss-120b','qwen/qwen3.8-27b'],url:'https://console.groq.com/keys',guide:'https://console.groq.com/docs/rate-limits',note:'Free developer tier · account limits'},
+ {id:'gemini',name:'Google Gemini',model:'gemini-2.5-flash-lite',models:['gemini-2.5-flash-lite','gemini-2.5-flash'],url:'https://aistudio.google.com/app/apikey',guide:'https://ai.google.dev/gemini-api/docs/pricing',note:'Eligible free-tier models · refresh account catalog'},
+ {id:'mistral',name:'Mistral',model:'mistral-small-latest',models:['mistral-small-latest','mistral-medium-latest'],url:'https://console.mistral.ai/api-keys',guide:'https://help.mistral.ai/en/articles/698531-why-am-i-hitting-api-rate-limits-and-how-do-i-increase-them',note:'Free evaluation mode · limits apply'},
+ {id:'nvidia',name:'NVIDIA NIM',model:'meta/llama-3.1-70b-instruct',models:['meta/llama-3.1-70b-instruct','nvidia/llama-3.3-nemotron-super-49b-v1'],url:'https://build.nvidia.com/',guide:'https://docs.api.nvidia.com/nim/docs/product',note:'Developer prototyping access · not unlimited production'},
+ {id:'cerebras',name:'Cerebras',model:'gpt-oss-120b',models:['gpt-oss-120b','qwen-3.8-27b'],url:'https://cloud.cerebras.ai/',guide:'https://www.cerebras.ai/pricing',note:'Promotional credit · payment method required · optional'},
+ {id:'huggingface',name:'Hugging Face',model:'openai/gpt-oss-20b:fastest',models:['openai/gpt-oss-20b:fastest','openai/gpt-oss-120b:fastest'],url:'https://huggingface.co/settings/tokens',guide:'https://huggingface.co/docs/inference-providers/pricing',note:'No free-user inference credits · funded/subscription account'}
+];
+export const registrationProviders=onlineProviders.map(p=>({...p,model:p.model}));

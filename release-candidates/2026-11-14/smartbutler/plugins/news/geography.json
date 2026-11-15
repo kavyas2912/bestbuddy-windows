@@ -1,0 +1,235 @@
+{
+  "aliases": {
+    "us": "united states",
+    "usa": "united states",
+    "united states of america": "united states",
+    "in": "india",
+    "gb": "united kingdom",
+    "uk": "united kingdom",
+    "ca": "canada",
+    "au": "australia",
+    "de": "germany",
+    "jp": "japan",
+    "fr": "france",
+    "hk": "hong kong",
+    "sg": "singapore",
+    "br": "brazil",
+    "nz": "new zealand",
+    "za": "south africa",
+    "eg": "egypt",
+    "ch": "switzerland",
+    "es": "spain",
+    "cn": "china",
+    "kr": "south korea",
+    "tw": "taiwan",
+    "th": "thailand"
+  },
+  "countries": {
+    "united states": "US",
+    "india": "IN",
+    "united kingdom": "GB",
+    "canada": "CA",
+    "australia": "AU",
+    "germany": "DE",
+    "japan": "JP",
+    "france": "FR",
+    "hong kong": "HK",
+    "singapore": "SG",
+    "brazil": "BR",
+    "new zealand": "NZ",
+    "south africa": "ZA",
+    "egypt": "EG",
+    "switzerland": "CH",
+    "spain": "ES",
+    "china": "CN",
+    "south korea": "KR",
+    "taiwan": "TW",
+    "thailand": "TH"
+  },
+  "cities": {
+    "united states|boston": {
+      "state": "Massachusetts",
+      "region": "New England",
+      "local": [
+        "wbur",
+        "wgbh",
+        "bostonglobe",
+        "bostoncom",
+        "wcvb",
+        "whdh",
+        "nbcboston"
+      ],
+      "regional": [
+        "wbur",
+        "wgbh",
+        "nhpr",
+        "mainepublic",
+        "ctpublic",
+        "vtdigger",
+        "nepm"
+      ]
+    },
+    "united kingdom|london": {
+      "state": "England",
+      "region": "London",
+      "local": [
+        "londonstandard",
+        "londonist"
+      ],
+      "regional": [
+        "londonstandard",
+        "londonist"
+      ]
+    },
+    "canada|toronto": {
+      "state": "Ontario",
+      "region": "Ontario",
+      "local": [
+        "citynews",
+        "torontostar"
+      ],
+      "regional": [
+        "citynews",
+        "torontostar",
+        "cbc"
+      ]
+    }
+  },
+  "national": {
+    "united states": [
+      "ap",
+      "npr",
+      "cnn",
+      "abc",
+      "cbs",
+      "nbc",
+      "pbs"
+    ],
+    "india": [
+      "hindu",
+      "express",
+      "hindustantimes",
+      "ndtv",
+      "toi"
+    ],
+    "united kingdom": [
+      "bbc",
+      "guardian",
+      "sky",
+      "itv",
+      "independent"
+    ],
+    "canada": [
+      "cbc",
+      "ctv",
+      "globalnews",
+      "globe"
+    ],
+    "australia": [
+      "abcau",
+      "sbs",
+      "smh",
+      "nine"
+    ],
+    "germany": [
+      "dw",
+      "tagesschau",
+      "spiegel",
+      "zeit"
+    ],
+    "japan": [
+      "nhk",
+      "japantimes",
+      "mainichi",
+      "asahi"
+    ],
+    "france": [
+      "lemonde",
+      "figaro",
+      "france24"
+    ],
+    "hong kong": [
+      "scmp",
+      "rthk",
+      "hkej"
+    ],
+    "singapore": [
+      "cna",
+      "straits",
+      "businesstimes"
+    ],
+    "brazil": [
+      "globo",
+      "folha",
+      "estadao",
+      "valor"
+    ],
+    "new zealand": [
+      "rnz",
+      "one_news"
+    ],
+    "south africa": [
+      "sabc",
+      "daily_maverick"
+    ],
+    "egypt": [
+      "ahram",
+      "egypt_today"
+    ],
+    "switzerland": [
+      "swissinfo",
+      "srf"
+    ],
+    "spain": [
+      "elpais",
+      "rtve"
+    ],
+    "china": [
+      "xinhua",
+      "china_daily"
+    ],
+    "south korea": [
+      "yonhap",
+      "korea_herald"
+    ],
+    "taiwan": [
+      "focus_taiwan",
+      "taipei_times"
+    ],
+    "thailand": [
+      "bangkok_post",
+      "thai_pbs"
+    ]
+  },
+  "topics": {
+    "science": [
+      "nasa",
+      "nature"
+    ],
+    "technology": [
+      "verge",
+      "nature"
+    ],
+    "culture": [
+      "smithsonian",
+      "variety"
+    ],
+    "sports": [
+      "espn"
+    ],
+    "business": [
+      "cnbc",
+      "yahoo"
+    ]
+  },
+  "region_aliases": {
+    "ma": "New England",
+    "massachusetts": "New England",
+    "new england": "New England",
+    "maine": "New England",
+    "vermont": "New England",
+    "new hampshire": "New England",
+    "connecticut": "New England",
+    "rhode island": "New England"
+  }
+}

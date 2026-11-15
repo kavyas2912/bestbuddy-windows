@@ -1,0 +1,222 @@
+/* Formal product shell. The approved desktop navigation is a top row, not a rail. */
+html[data-product="butler"] #app.baseline-ui .topbar::before {
+  /* The old opaque sheen painted over the upper half of header controls. */
+  content: none !important;
+}
+html[data-product="butler"] #app.baseline-ui .action-btn:not(.ghost),
+html[data-product="butler"] #app.baseline-ui #briefing-now {
+  background: var(--button-bg) !important;
+  color: var(--button-text) !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .workspace {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 0 !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  padding: 0 8px 8px !important;
+  gap: 6px !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .desktop-widget-nav {
+  display: flex !important;
+  flex: 0 0 auto !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 40px !important;
+  height: auto !important;
+  max-height: none !important;
+  padding: 3px 0 !important;
+  gap: 5px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  border-bottom: 1px solid var(--border-ui) !important;
+  background: transparent !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .desktop-widget-nav button {
+  flex: 0 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+  width: auto !important;
+  min-width: 0 !important;
+  min-height: 32px !important;
+  padding: 5px 12px !important;
+  white-space: nowrap !important;
+  font: 400 14px/1.35 var(--font-ui) !important;
+  border-radius: 8px !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .desktop-widget-nav button.active {
+  background: var(--button-bg) !important;
+  color: var(--button-text) !important;
+  border-color: var(--border-ui) !important;
+  box-shadow: var(--shadow-control) !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .desktop-widget-nav button:hover {
+  border-color: var(--border-ui) !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .desktop-widget-nav button :is(b,span) {
+  font: inherit !important;
+  color: inherit !important;
+  white-space: nowrap !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .dashboard {
+  flex: 1 1 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  width: 100% !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .topbar {
+  height: auto !important;
+  flex: 0 0 auto !important;
+  min-height: 52px !important;
+  padding: 5px 10px !important;
+  gap: 12px !important;
+  align-items: center !important;
+  overflow: visible !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .brand {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+  gap: 8px !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui :is(.butler-mark-wrap,.butler-mark) {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .butler-wordmark {
+  width: 170px !important;
+  height: 36px !important;
+  object-fit: contain;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .header-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex: 0 1 auto !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  height: auto !important;
+  min-height: 32px !important;
+  max-width: 100% !important;
+  gap: 5px !important;
+  margin-left: auto !important;
+  padding: 0 !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .header-actions :is(.header-pill,.voice-mini,.talk-button,.round-icon) {
+  position: static !important;
+  margin: 0 !important;
+  align-self: center !important;
+  min-height: 30px !important;
+  height: auto !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .desktop-context-bar {
+  flex: 0 0 auto !important;
+  height: auto !important;
+  min-height: 34px !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 5px 14px !important;
+  padding: 4px 10px !important;
+}
+html[data-product="butler"] #app.baseline-ui .panel-head {
+  flex: 0 0 auto !important;
+  height: auto !important;
+  min-height: 36px !important;
+  gap: 8px !important;
+}
+html[data-product="butler"] #app.baseline-ui .chatter-panel .panel-title {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+}
+html[data-product="butler"] #app.baseline-ui .chatter-panel .panel-tools {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  margin-left: auto !important;
+  padding: 0 !important;
+}
+html[data-product="butler"] #app.baseline-ui #briefing-now {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 160px !important;
+  padding: 4px 9px !important;
+  min-height: 28px !important;
+  font-size: 12px !important;
+}
+html[data-product="butler"] #app.baseline-ui .briefing-controls {
+  flex: 0 0 auto !important;
+  min-height: 28px !important;
+  padding: 3px 10px !important;
+  gap: 8px !important;
+  font-size: 12px !important;
+}
+html[data-product="butler"] #app.baseline-ui .briefing-controls button {
+  min-height: 26px !important;
+  min-width: 0 !important;
+  padding: 3px 8px !important;
+}
+html[data-product="butler"] #app.baseline-ui :is(.news-ticker,.market-news-ticker) {
+  flex: 0 0 auto !important;
+  height: 34px !important;
+  min-height: 0 !important;
+  max-height: 34px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  scrollbar-width: none !important;
+}
+html[data-product="butler"] #app.baseline-ui :is(.news-ticker,.market-news-ticker)::-webkit-scrollbar { display: none; }
+html[data-product="butler"] #app.baseline-ui .butler-ticker-track {
+  display: flex !important;
+  align-items: center !important;
+  width: max-content !important;
+  gap: 16px !important;
+  padding: 2px 6px !important;
+}
+html[data-product="butler"] #app.baseline-ui .butler-ticker-track button {
+  flex: 0 0 auto !important;
+  font-size: 12px !important;
+  min-height: 28px !important;
+  padding: 3px 7px !important;
+  box-shadow: none !important;
+}
+html[data-product="butler"] #app.baseline-ui .butler-ticker-track:focus-within { animation-play-state: paused !important; }
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .butler-entrance {
+  bottom: 106px !important;
+  right: 18px !important;
+  width: 120px !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .butler-entrance img {
+  width: 100px !important;
+  height: 145px !important;
+}
+html[data-product="butler"]:not(.phone-mode) #app.baseline-ui .butler-entrance span {
+  font-size: 11px !important;
+  padding: 5px 7px !important;
+}
+html[data-product="butler"] #app.baseline-ui .chatter-panel :is(.chat-compose,.chatter-switch) {
+  flex: 0 0 auto !important;
+  min-height: 0 !important;
+  padding: 6px 10px !important;
+}
+@media (max-width: 600px) {
+  html[data-product="butler"] #app.baseline-ui .chatter-panel .panel-title h2 { font-size: 13px !important; }
+  html[data-product="butler"] #app.baseline-ui #briefing-now { max-width: 135px !important; }
+  html[data-product="butler"] #app.baseline-ui .briefing-controls button { min-height: 44px !important; }
+}
+@media print {
+  html[data-product="butler"] #app.baseline-ui {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

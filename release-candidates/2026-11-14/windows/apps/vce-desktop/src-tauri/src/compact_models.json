@@ -1,0 +1,94 @@
+[
+  {
+    "repo": "Qwen/Qwen3-4B-GGUF",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "file": "Qwen3-4B-Q4_K_M.gguf",
+    "size": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "downloads": 563901,
+    "id": "qwen3-4b-q4",
+    "name": "Qwen3-4B-Q4_K_M",
+    "size_bytes": 2497280256,
+    "license": "Apache-2.0"
+  },
+  {
+    "repo": "Qwen/Qwen3-4B-GGUF",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "file": "Qwen3-4B-Q8_0.gguf",
+    "size": 4280404704,
+    "sha256": "8c2f07f26af9747e41988551106f149b03eb9b5cb6df636027b6bf6278473300",
+    "downloads": 563901,
+    "id": "qwen3-4b-q8",
+    "name": "Qwen3-4B-Q8_0",
+    "size_bytes": 4280404704,
+    "license": "Apache-2.0"
+  },
+  {
+    "repo": "Qwen/Qwen3-8B-GGUF",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "file": "Qwen3-8B-Q4_K_M.gguf",
+    "size": 5027783488,
+    "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "downloads": 618003,
+    "id": "qwen3-8b-q4",
+    "name": "Qwen3-8B-Q4_K_M",
+    "size_bytes": 5027783488,
+    "license": "Apache-2.0"
+  },
+  {
+    "repo": "Qwen/Qwen3-8B-GGUF",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "file": "Qwen3-8B-Q8_0.gguf",
+    "size": 8709518112,
+    "sha256": "408b955510e196121c1c375201744783b5c9a43c7956d73fc78df54c66e883d6",
+    "downloads": 618003,
+    "id": "qwen3-8b-q8",
+    "name": "Qwen3-8B-Q8_0",
+    "size_bytes": 8709518112,
+    "license": "Apache-2.0"
+  },
+  {
+    "repo": "bartowski/SmolLM2-1.7B-Instruct-GGUF",
+    "revision": "1f03464768bfcc0319fc50da8ff5fb20b6417ba2",
+    "file": "SmolLM2-1.7B-Instruct-Q4_K_M.gguf",
+    "size_bytes": 1055609824,
+    "sha256": "77665ea4815999596525c636fbeb56ba8b080b46ae85efef4f0d986a139834d7",
+    "downloads": 14432,
+    "license": "apache-2.0",
+    "id": "smollm2-1.7b-q4",
+    "name": "SmolLM2-1.7B-Instruct-Q4_K_M"
+  },
+  {
+    "repo": "bartowski/SmolLM2-1.7B-Instruct-GGUF",
+    "revision": "1f03464768bfcc0319fc50da8ff5fb20b6417ba2",
+    "file": "SmolLM2-1.7B-Instruct-Q8_0.gguf",
+    "size_bytes": 1820414944,
+    "sha256": "0c6e8955788b1253f418c354a4bdc4cf507b8cfe49c48bb10c7c58ae713cfa2a",
+    "downloads": 14432,
+    "license": "apache-2.0",
+    "id": "smollm2-1.7b-q8",
+    "name": "SmolLM2-1.7B-Instruct-Q8_0"
+  },
+  {
+    "repo": "bartowski/Phi-3.5-mini-instruct-GGUF",
+    "revision": "6d70da17e749a471ccb62ade694486011a75cda3",
+    "file": "Phi-3.5-mini-instruct-Q4_K_M.gguf",
+    "size_bytes": 2393232672,
+    "sha256": "e4165e3a71af97f1b4820da61079826d8752a2088e313af0c7d346796c38eff5",
+    "downloads": 37728,
+    "license": "mit",
+    "id": "phi3.5-mini-q4",
+    "name": "Phi-3.5-mini-instruct-Q4_K_M"
+  },
+  {
+    "repo": "Qwen/Qwen3-0.6B-GGUF",
+    "revision": "23749fefcc72300e3a2ad315e1317431b06b590a",
+    "file": "Qwen3-0.6B-Q8_0.gguf",
+    "size_bytes": 639446688,
+    "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+    "downloads": 304348,
+    "license": "apache-2.0",
+    "id": "qwen3-0.6b",
+    "name": "Qwen3 0.6B Q8"
+  }
+]
