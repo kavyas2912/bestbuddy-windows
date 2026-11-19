@@ -1,0 +1,18 @@
+{
+  "bundle": {
+    "targets": ["msi"],
+    "resources": {
+      "../../../.bundle-models/asr/": "models/asr/sherpa-onnx-whisper-base.en/",
+      "../../../.bundle-models/tts/": "models/tts/vits-piper-en_US-lessac-medium/",
+      "../../../.bundle-models/vad/silero_vad.onnx": "models/vad/silero_vad.onnx",
+      "../../../.bundle-models/kws/": "models/kws/sherpa-onnx-kws-zipformer-gigaspeech-3.3M-2024-01-01/",
+      "../../../.bundle-models/kws-keywords/keywords.txt": "models/kws/keywords.txt",
+      "../../../.bundle-models/denoise/gtcrn_simple.onnx": "models/denoise/gtcrn_simple.onnx"
+    },
+    "windows": {
+      "webviewInstallMode": {
+        "type": "offlineInstaller"
+      }
+    }
+  }
+}

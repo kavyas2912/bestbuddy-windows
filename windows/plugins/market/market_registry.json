@@ -1,0 +1,428 @@
+[
+  {
+    "id": "India",
+    "country": "India",
+    "name": "NSE/BSE",
+    "timezone": "Asia/Kolkata",
+    "symbols": [
+      {
+        "name": "NIFTY 50",
+        "code": "^nsei",
+        "provider_symbol": "^NSEI",
+        "kind": "index"
+      },
+      {
+        "name": "SENSEX",
+        "code": "^bsesn",
+        "provider_symbol": "^BSESN",
+        "kind": "index"
+      },
+      {
+        "name": "Reliance",
+        "code": "RELIANCE.NS",
+        "provider_symbol": "RELIANCE.NS",
+        "kind": "stock"
+      },
+      {
+        "name": "HDFC Bank",
+        "code": "HDFCBANK.NS",
+        "provider_symbol": "HDFCBANK.NS",
+        "kind": "stock"
+      },
+      {
+        "name": "Infosys",
+        "code": "INFY.NS",
+        "provider_symbol": "INFY.NS",
+        "kind": "stock"
+      },
+      {
+        "name": "TCS",
+        "code": "TCS.NS",
+        "provider_symbol": "TCS.NS",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".NS"
+  },
+  {
+    "id": "USA",
+    "country": "United States",
+    "name": "NYSE/Nasdaq",
+    "timezone": "America/New_York",
+    "symbols": [
+      {
+        "name": "S&P 500",
+        "code": "^spx",
+        "provider_symbol": "^GSPC",
+        "kind": "index"
+      },
+      {
+        "name": "NASDAQ",
+        "code": "^ndq",
+        "provider_symbol": "^IXIC",
+        "kind": "index"
+      },
+      {
+        "name": "DOW JONES",
+        "code": "^dji",
+        "provider_symbol": "^DJI",
+        "kind": "index"
+      },
+      {
+        "name": "Apple",
+        "code": "AAPL",
+        "provider_symbol": "AAPL",
+        "kind": "stock"
+      },
+      {
+        "name": "Microsoft",
+        "code": "MSFT",
+        "provider_symbol": "MSFT",
+        "kind": "stock"
+      },
+      {
+        "name": "Nvidia",
+        "code": "NVDA",
+        "provider_symbol": "NVDA",
+        "kind": "stock"
+      },
+      {
+        "name": "Amazon",
+        "code": "AMZN",
+        "provider_symbol": "AMZN",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ""
+  },
+  {
+    "id": "UK",
+    "country": "United Kingdom",
+    "name": "London Stock Exchange",
+    "timezone": "Europe/London",
+    "symbols": [
+      {
+        "name": "FTSE 100",
+        "code": "^ftse",
+        "provider_symbol": "^FTSE",
+        "kind": "index"
+      },
+      {
+        "name": "HSBC",
+        "code": "HSBA.L",
+        "provider_symbol": "HSBA.L",
+        "kind": "stock"
+      },
+      {
+        "name": "Shell",
+        "code": "SHEL.L",
+        "provider_symbol": "SHEL.L",
+        "kind": "stock"
+      },
+      {
+        "name": "AstraZeneca",
+        "code": "AZN.L",
+        "provider_symbol": "AZN.L",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".L"
+  },
+  {
+    "id": "Germany",
+    "country": "Germany",
+    "name": "Xetra/Frankfurt",
+    "timezone": "Europe/Berlin",
+    "symbols": [
+      {
+        "name": "DAX",
+        "code": "^dax",
+        "provider_symbol": "^GDAXI",
+        "kind": "index"
+      },
+      {
+        "name": "SAP",
+        "code": "SAP.DE",
+        "provider_symbol": "SAP.DE",
+        "kind": "stock"
+      },
+      {
+        "name": "Siemens",
+        "code": "SIE.DE",
+        "provider_symbol": "SIE.DE",
+        "kind": "stock"
+      },
+      {
+        "name": "Allianz",
+        "code": "ALV.DE",
+        "provider_symbol": "ALV.DE",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".DE"
+  },
+  {
+    "id": "Japan",
+    "country": "Japan",
+    "name": "Tokyo Stock Exchange",
+    "timezone": "Asia/Tokyo",
+    "symbols": [
+      {
+        "name": "NIKKEI 225",
+        "code": "^nky",
+        "provider_symbol": "^N225",
+        "kind": "index"
+      },
+      {
+        "name": "Toyota",
+        "code": "7203.T",
+        "provider_symbol": "7203.T",
+        "kind": "stock"
+      },
+      {
+        "name": "Sony",
+        "code": "6758.T",
+        "provider_symbol": "6758.T",
+        "kind": "stock"
+      },
+      {
+        "name": "Mitsubishi UFJ",
+        "code": "8306.T",
+        "provider_symbol": "8306.T",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".T"
+  },
+  {
+    "id": "Australia",
+    "country": "Australia",
+    "name": "ASX",
+    "timezone": "Australia/Sydney",
+    "symbols": [
+      {
+        "name": "ASX 200",
+        "code": "^AXJO",
+        "provider_symbol": "^AXJO",
+        "kind": "index"
+      },
+      {
+        "name": "BHP",
+        "code": "BHP.AX",
+        "provider_symbol": "BHP.AX",
+        "kind": "stock"
+      },
+      {
+        "name": "Commonwealth Bank",
+        "code": "CBA.AX",
+        "provider_symbol": "CBA.AX",
+        "kind": "stock"
+      },
+      {
+        "name": "CSL",
+        "code": "CSL.AX",
+        "provider_symbol": "CSL.AX",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".AX"
+  },
+  {
+    "id": "Canada",
+    "country": "Canada",
+    "name": "Toronto Stock Exchange",
+    "timezone": "America/Toronto",
+    "symbols": [
+      {
+        "name": "S&P/TSX",
+        "code": "^GSPTSE",
+        "provider_symbol": "^GSPTSE",
+        "kind": "index"
+      },
+      {
+        "name": "Royal Bank",
+        "code": "RY.TO",
+        "provider_symbol": "RY.TO",
+        "kind": "stock"
+      },
+      {
+        "name": "Shopify",
+        "code": "SHOP.TO",
+        "provider_symbol": "SHOP.TO",
+        "kind": "stock"
+      },
+      {
+        "name": "Enbridge",
+        "code": "ENB.TO",
+        "provider_symbol": "ENB.TO",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".TO"
+  },
+  {
+    "id": "France",
+    "country": "France",
+    "name": "Euronext Paris",
+    "timezone": "Europe/Paris",
+    "symbols": [
+      {
+        "name": "CAC 40",
+        "code": "^FCHI",
+        "provider_symbol": "^FCHI",
+        "kind": "index"
+      },
+      {
+        "name": "LVMH",
+        "code": "MC.PA",
+        "provider_symbol": "MC.PA",
+        "kind": "stock"
+      },
+      {
+        "name": "TotalEnergies",
+        "code": "TTE.PA",
+        "provider_symbol": "TTE.PA",
+        "kind": "stock"
+      },
+      {
+        "name": "Airbus",
+        "code": "AIR.PA",
+        "provider_symbol": "AIR.PA",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".PA"
+  },
+  {
+    "id": "Hong Kong",
+    "country": "Hong Kong",
+    "name": "HKEX",
+    "timezone": "Asia/Hong_Kong",
+    "symbols": [
+      {
+        "name": "HANG SENG",
+        "code": "^HSI",
+        "provider_symbol": "^HSI",
+        "kind": "index"
+      },
+      {
+        "name": "Tencent",
+        "code": "0700.HK",
+        "provider_symbol": "0700.HK",
+        "kind": "stock"
+      },
+      {
+        "name": "Alibaba",
+        "code": "9988.HK",
+        "provider_symbol": "9988.HK",
+        "kind": "stock"
+      },
+      {
+        "name": "HSBC",
+        "code": "0005.HK",
+        "provider_symbol": "0005.HK",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".HK"
+  },
+  {
+    "id": "Singapore",
+    "country": "Singapore",
+    "name": "SGX",
+    "timezone": "Asia/Singapore",
+    "symbols": [
+      {
+        "name": "STRAITS TIMES",
+        "code": "^STI",
+        "provider_symbol": "^STI",
+        "kind": "index"
+      },
+      {
+        "name": "DBS",
+        "code": "D05.SI",
+        "provider_symbol": "D05.SI",
+        "kind": "stock"
+      },
+      {
+        "name": "OCBC",
+        "code": "O39.SI",
+        "provider_symbol": "O39.SI",
+        "kind": "stock"
+      },
+      {
+        "name": "UOB",
+        "code": "U11.SI",
+        "provider_symbol": "U11.SI",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".SI"
+  },
+  {
+    "id": "Brazil",
+    "country": "Brazil",
+    "name": "B3",
+    "timezone": "America/Sao_Paulo",
+    "symbols": [
+      {
+        "name": "IBOVESPA",
+        "code": "^BVSP",
+        "provider_symbol": "^BVSP",
+        "kind": "index"
+      },
+      {
+        "name": "Petrobras",
+        "code": "PETR4.SA",
+        "provider_symbol": "PETR4.SA",
+        "kind": "stock"
+      },
+      {
+        "name": "Vale",
+        "code": "VALE3.SA",
+        "provider_symbol": "VALE3.SA",
+        "kind": "stock"
+      },
+      {
+        "name": "Itau",
+        "code": "ITUB4.SA",
+        "provider_symbol": "ITUB4.SA",
+        "kind": "stock"
+      }
+    ],
+    "quote_provider": "Yahoo Finance",
+    "provider_reference": "https://help.yahoo.com/kb/SLN2310.html",
+    "data_policy": "Latest available quote; exchange-dependent delays; last regular-session value outside hours",
+    "symbol_suffix": ".SA"
+  }
+]

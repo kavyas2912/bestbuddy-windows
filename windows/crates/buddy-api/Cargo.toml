@@ -1,0 +1,11 @@
+[package]
+name="buddy-api"
+version.workspace=true
+edition.workspace=true
+[dependencies]
+buddy-core={path="../buddy-core"}
+buddy-plugin={path="../buddy-plugin"}
+buddy-voice={path="../buddy-voice"}
+serde.workspace=true
+serde_json.workspace=true
+tokio.workspace=true

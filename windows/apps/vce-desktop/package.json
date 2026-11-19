@@ -1,0 +1,25 @@
+{
+  "name": "vce-buddy",
+  "private": true,
+  "version": "1.6.26",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 1420 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "tauri": "tauri",
+    "test": "tsc src/briefing.ts src/speech_policy.ts src/onboarding_policy.ts src/settings_policy.ts src/reminders.ts src/discovery.ts src/newsroom.ts src/watchlists.ts src/stockdetail.ts --outDir dist-test --target ES2022 --module ES2022 --skipLibCheck && node src/reminders.test.mjs && node src/discovery.test.mjs && node src/newsroom.test.mjs && node src/watchlists.test.mjs && node src/stockdetail.test.mjs && node src/settings_policy.test.mjs && node src/onboarding_policy.test.mjs && node src/briefing.test.mjs && node src/speech_policy.test.mjs"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4",
+    "typescript": "5.7.3",
+    "vite": "6.1.0"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "bootstrap": "5.3.8"
+  },
+  "allowScripts": {
+    "esbuild@0.24.2": true
+  }
+}
